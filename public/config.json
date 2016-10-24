@@ -5,7 +5,7 @@
     },
     "endpoints": [
         {
-            "repo": "pfanone/paulfanone",,
+            "repo": "pfanone/paulfanone",
             "branch": "master",
             "action": "something has been changed on the server",
             "run": "./payload.sh"
