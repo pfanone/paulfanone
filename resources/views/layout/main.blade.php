@@ -10,7 +10,7 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
-	{!! HTML::style('/css/main.css') !!}
+	<link rel="stylesheet" href="{{ URL::asset('css/main.css') }}" />
 </head>
 
 <body>
