@@ -39,6 +39,7 @@
         <div class="container">
             <div class="content">
                 <div class="title">Paul Fanone</div>
+                <div class="title">Developer</div>
             </div>
         </div>
     </body>
