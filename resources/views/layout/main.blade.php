@@ -7,10 +7,9 @@
 	<meta name="keywords" content="web developer">
 	<meta name="description" content="Paul Fanone's Personal Website">
 	<title>@yield('title')</title>
-	<link rel="shortcut icon" href="{{\Config::get('branding.icon')}}" />
-	<link rel="apple-touch-icon" href="{{\Config::get('branding.touch_icon')}}" />
 
 	<link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+	
 	{{ HTML::style('css/main.css') }}
 </head>
 
