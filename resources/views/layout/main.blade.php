@@ -27,11 +27,16 @@
 	<meta name="theme-color" content="#ffffff">
 
 	<link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-
+	
+	<link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}" />
 	<link rel="stylesheet" href="{{ URL::asset('css/main.css') }}" />
+
 </head>
 
 <body>
 	@yield('content')
+
+	<script type="text/javascript" src="{{ URL::asset('js/jquery-3.1.1.min.js') }}"></script>
+	<script type="text/javascript" src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
 </body>
 </html>
