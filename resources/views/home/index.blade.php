@@ -8,6 +8,7 @@
 		<div class="text-center">
 			<div class="title">Paul Fanone</div>
 			<div class="sub-title">Web Developer</div>
+			<img src="/img/stellar-spire-eagle-nebula-1400x900.jpg"">
 		</div>
 	</div>
 </section>
