@@ -11,3 +11,8 @@
 	font-family: 'Lato';
 	font-size: 80px;
 }
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
