@@ -26,7 +26,7 @@
 	<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 
-	<link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,400,700" rel="stylesheet">
 	
 	<link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}" />
 	<link rel="stylesheet" href="{{ URL::asset('css/main.css') }}" />

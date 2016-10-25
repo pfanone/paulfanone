@@ -1,6 +1,7 @@
 html, body {
 	height: 100%; 
 	font-family: 'Lato';
+	font-weight: 400;
 }
 
 .title {
@@ -31,7 +32,7 @@ html, body {
 
 	position: relative;
 	
-    height: 700px;
+    height: 500px;
 }
 
 .title-container {
