@@ -18,7 +18,7 @@
 		</div>
 		<div class="col-xs-12 col-sm-7 col-md-6">
 			<p class="about">I'm an adaptable programmer that can create specialized to meet any requirement.</p>
-			<p class="about">Experience in many languaged including PHP, Javascript, MySQL, HTML, and CSS. I'm also open to learning new languages as needed.</p>
+			<p class="about">Experienced in many languaged including PHP, Javascript, MySQL, HTML, and CSS. I'm also open to learning new languages as needed.</p>
 		</div>
 	</div>
 </div>
