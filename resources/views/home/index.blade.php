@@ -12,7 +12,7 @@
 	</div>
 </section>
 
-<div class="parallax-window" data-parallax="scroll" data-image-src="/img/stellar-spire-eagle-nebula-1400x900.jpg"></div>
+<div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="/img/stellar-spire-eagle-nebula-1400x900.jpg" data-natural-width="1400" data-natural-height="900"></div>
 
 <section>
 	<div class="container">
@@ -23,7 +23,7 @@
 	</div>
 </section>
 
-<div class="parallax-window" data-parallax="scroll" data-image-src="/img/stellar-spire-eagle-nebula-1400x900.jpg"></div>
+<div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="/img/stellar-spire-eagle-nebula-1400x900.jpg" data-natural-width="1400" data-natural-height="1400"></div>
 
 <section>
 	<div class="container">
@@ -34,7 +34,7 @@
 	</div>
 </section>
 
-<div class="parallax-window" data-parallax="scroll" data-image-src="/img/stellar-spire-eagle-nebula-1400x900.jpg"></div>
+<div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="/img/stellar-spire-eagle-nebula-1400x900.jpg" data-natural-width="1400" data-natural-height="1400"></div>
 
 <section>
 	<div class="container">
