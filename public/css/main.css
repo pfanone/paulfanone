@@ -19,4 +19,5 @@
     -o-background-size: cover;
     background-size: cover;
     opacity: 0.5;
+    height: 100%;
  }
