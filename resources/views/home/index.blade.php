@@ -12,9 +12,6 @@
 	</div>
 </section>
 
-<div class="parallax-container"></div>
+<div class="parallax-window" data-parallax="scroll" data-image-src="/img/stellar-spire-eagle-nebula-1400x900.jpg"></div>
 
-<script>
-$('.parallax-window').parallax({imageSrc: '/img/stellar-spire-eagle-nebula-1400x900.jpg'});
-</script>
 @endsection
