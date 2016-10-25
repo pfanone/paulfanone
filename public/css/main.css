@@ -17,12 +17,12 @@ html, body { height: 100%; }
 }
 
 .title-div {
-	background-image:  url('/images/iceland_1.jpg');
+	background-image:  url('/images/Fanone.jpg');
 	
-	background: -webkit-radial-gradient(circle, transparent, transparent, #000), url('/images/iceland_1.jpg');		/* Safari 5.1 to 6.0 */
-	background: -moz-radial-gradient(circle, transparent, transparent, #000), url('/images/iceland_1.jpg');			/* For Firefox 3.6 to 15 */
-	background: -o-radial-gradient(circle, transparent, transparent, #000), url('/images/iceland_1.jpg');			/* For Opera 11.6 to 12.0 */
-	background: radial-gradient(circle, transparent 20%, rgba(0,0,0,0.7) 60%), url('/images/iceland_1.jpg');	/* Standard syntax */	
+	background: -webkit-radial-gradient(circle, transparent, transparent, #000), url('/images/Fanone.jpg');		/* Safari 5.1 to 6.0 */
+	background: -moz-radial-gradient(circle, transparent, transparent, #000), url('/images/Fanone.jpg');			/* For Firefox 3.6 to 15 */
+	background: -o-radial-gradient(circle, transparent, transparent, #000), url('/images/Fanone.jpg');			/* For Opera 11.6 to 12.0 */
+	background: radial-gradient(circle, transparent 20%, rgba(0,0,0,0.7) 60%), url('/images/Fanone.jpg');	/* Standard syntax */	
 
 	background-repeat: no-repeat;
 	background-size:   cover;
