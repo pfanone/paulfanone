@@ -29,8 +29,12 @@
 			<h2 class="about">Experience</h2>
 		</div>
 		<div class="col-xs-12 col-sm-7 col-lg-6">
-			<p class="about">WhoPlusYou.com</p>
-			<p class="about">Ryerson University</p>
+			<div class="exp_container">
+				<p class="about">WhoPlusYou.com</p>
+			</div>
+			<div class="exp_container">
+				<p class="about">Ryerson University</p>
+			</div>
 		</div>
 	</div>
 </div>
