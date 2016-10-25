@@ -12,11 +12,11 @@
 </div>
 
 <div class="container-fluid padT50 padB50">
-	<div class="row marginT20">
-		<div class="col-xs-12 col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-2 text-center">
+	<div class="row">
+		<div class="col-xs-12 col-sm-3 col-sm-offset-1 col-lg-2 col-lg-offset-2 text-center">
 			<h2 class="about">About Paul</h2>
 		</div>
-		<div class="col-xs-12 col-sm-7 col-md-6">
+		<div class="col-xs-12 col-sm-7 col-lg-6">
 			<p class="about">I'm an adaptable programmer that can create specialized to meet any requirement.</p>
 			<p class="about">Experienced in many languaged including PHP, Javascript, MySQL, HTML, and CSS. I'm also open to learning new languages as needed.</p>
 		</div>
@@ -24,11 +24,11 @@
 </div>
 
 <div class="container-fluid blue-bg padT50 padB50">
-	<div class="row marginT20">
-		<div class="col-xs-12 col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-2 text-center">
+	<div class="row">
+		<div class="col-xs-12 col-sm-3 col-sm-offset-1 col-lg-2 col-lg-offset-2 text-center">
 			<h2 class="about">Experience</h2>
 		</div>
-		<div class="col-xs-12 col-sm-7 col-md-6">
+		<div class="col-xs-12 col-sm-7 col-lg-6">
 			<p class="about">WhoPlusYou.com</p>
 			<p class="about">Ryerson University</p>
 		</div>

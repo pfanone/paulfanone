@@ -30,6 +30,7 @@ html, body {
 
 	background-repeat: no-repeat;
 	background-size:   cover;
+    background-position: center;
 
 	position: relative;
 	
@@ -54,3 +55,7 @@ h2.about { border-bottom: solid 6px #2980b9; }
 }
 
 .blue-bg h2.about { border-bottom: solid 6px #fff; }
+
+@media (max-width: 425px) {
+	.title { font-size: 70px; }
+}
