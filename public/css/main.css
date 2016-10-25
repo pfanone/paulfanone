@@ -63,7 +63,7 @@ h2.about {
 	.title { font-size: 70px; }
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 1100px) {
     .title-div {
         background-image:  url('/images/Fanone.jpg');
         
