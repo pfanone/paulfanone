@@ -7,9 +7,6 @@ html, body { height: 100%; }
 
 	color: white;
     text-shadow: 2px 2px 4px #000000;
-
-    position: absolute;
-    bottom: 50px;
 }
 
 .sub-title {
@@ -34,4 +31,7 @@ html, body { height: 100%; }
     height: 700px;
 }
 
-.title-container { position: relative; }
+.title-container {
+	position: absolute;
+    bottom: 50px;
+}
