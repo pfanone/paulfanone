@@ -17,7 +17,7 @@
 			<h2 class="about">About Paul</h2>
 		</div>
 		<div class="col-xs-12 col-sm-7 col-lg-6">
-			<p class="about">I'm an adaptable programmer that can create specialized to meet any requirement.</p>
+			<p class="about">I'm an adaptable programmer that can create specialized solutions to meet any requirement.</p>
 			<p class="about">Experienced in many languaged including PHP, Javascript, MySQL, HTML, and CSS. I'm also open to learning new languages as needed.</p>
 		</div>
 	</div>
