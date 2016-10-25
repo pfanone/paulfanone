@@ -29,15 +29,17 @@
 			<h2 class="about">Experience</h2>
 		</div>
 		<div class="col-xs-12 col-sm-7 col-lg-6">
-			<div class="exp_container row">
-				<div class="col-xs-6">
-					<p class="header">WhoPlusYou.com</p>
-				</div>
-				<div class="col-xs-6">
-					<p class="header">5 years</p>
-				</div>
-				<div class="col-xs-16">
-					<p class="desc">Web Developer</p>
+			<div class="exp_container">
+				<div class="row">
+					<div class="col-xs-6">
+						<p class="header">WhoPlusYou.com</p>
+					</div>
+					<div class="col-xs-6">
+						<p class="header">5 years</p>
+					</div>
+					<div class="col-xs-16">
+						<p class="desc">Web Developer</p>
+					</div>
 				</div>
 			</div>
 			<div class="exp_container">

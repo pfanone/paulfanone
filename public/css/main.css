@@ -69,12 +69,12 @@ h2.about {
     margin-top:10px;
 }
 
-.exp_container > .header {
+.exp_container .header {
     border-bottom: solid 1px #fff;
     font-size: 20px;
 }
 
-.exp_container > .desc {
+.exp_container .desc {
     font-size: 15px;
 }
 
