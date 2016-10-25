@@ -11,7 +11,7 @@
 	</div>
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid marginT20">
 	<div class="row marginT20">
 		<div class="col-xs-12 col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-2 text-center">
 			<h2 class="about">About Paul</h2>
