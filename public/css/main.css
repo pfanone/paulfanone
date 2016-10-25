@@ -4,9 +4,12 @@ html, body {
 	font-weight: 400;
 }
 
-.title {
+.title, .sub-title {
 	font-weight: 100;
 	font-family: 'Lato';
+}
+
+.title {
 	font-size: 96px;
 
 	color: white;
@@ -14,8 +17,6 @@ html, body {
 }
 
 .sub-title {
-	font-weight: 100;
-	font-family: 'Lato';
 	font-size: 80px;
 }
 
@@ -32,15 +33,15 @@ html, body {
 
 	position: relative;
 	
-    height: 500px;
+    height: 550px;
 }
 
 .title-container {
 	width:100%;
 	position: absolute;
-    bottom: 50px;
+    bottom: 40px;
 }
 
 .cred-list li {
-	font-size: 25px;
+	font-size: 20px;
 }
