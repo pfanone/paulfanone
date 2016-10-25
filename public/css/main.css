@@ -71,6 +71,9 @@ h2.about {
         background: -moz-radial-gradient(circle, transparent, transparent, #2980b9), url('/images/Fanone.jpg');         /* For Firefox 3.6 to 15 */
         background: -o-radial-gradient(circle, transparent, transparent, #2980b9), url('/images/Fanone.jpg');           /* For Opera 11.6 to 12.0 */
         background: radial-gradient(circle, transparent 20%, rgba(41, 128, 185, 1) 60%), url('/images/Fanone.jpg');    /* Standard syntax */   
+        
         background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top;
     }
 }
