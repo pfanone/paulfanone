@@ -39,7 +39,7 @@ html, body {
 .title-container {
 	width:100%;
 	position: absolute;
-    bottom: 40px;
+    bottom: 10px;
 }
 
 .cred-list li {
