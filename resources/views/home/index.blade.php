@@ -30,17 +30,8 @@
 		</div>
 		<div class="col-xs-12 col-sm-7 col-lg-6">
 			<div class="exp_container">
-				<div class="row">
-					<div class="col-xs-6">
-						<p class="header">WhoPlusYou.com</p>
-					</div>
-					<div class="col-xs-6">
-						<p class="header">5 years</p>
-					</div>
-					<div class="col-xs-16">
-						<p class="desc">Web Developer</p>
-					</div>
-				</div>
+				<p class="header">WhoPlusYou.com</p>
+				<p class="desc">Web Developer</p>
 			</div>
 			<div class="exp_container">
 				<p class="header">Ryerson University</p>
