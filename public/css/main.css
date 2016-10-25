@@ -39,3 +39,7 @@ html, body {
 	position: absolute;
     bottom: 50px;
 }
+
+.cred-list li {
+	font-size: 25px;
+}
