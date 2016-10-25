@@ -65,6 +65,10 @@ h2.about {
     padding: 20px;
 }
 
+.exp_container:not(:first-child) {
+    margin-top:10px;
+}
+
 .exp_container > .header {
     border-bottom: solid 1px #fff;
     font-size: 20px;
