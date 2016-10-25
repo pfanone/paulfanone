@@ -13,10 +13,10 @@
 
 <div class="container-fluid">
 	<div class="row marginT20">
-		<div class="col-xs-12 col-sm-4 text-right">
-			<h2>About Paul</h2>
+		<div class="col-xs-12 col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-2 text-right">
+			<h2 class="about">About Paul</h2>
 		</div>
-		<div class="col-xs-12 col-sm-8">
+		<div class="col-xs-12 col-sm-6">
 			<ul class="cred-list marginT15">
 				<li>Ryerson University Computer Science Graduate</li>
 				<li>Web Developer at WhoPlusYou.com</li>

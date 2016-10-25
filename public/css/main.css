@@ -45,3 +45,5 @@ html, body {
 .cred-list li {
 	font-size: 20px;
 }
+
+h2.about { border-bottom: solid 6px #2980b9; }
