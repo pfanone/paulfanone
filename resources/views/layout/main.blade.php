@@ -33,13 +33,9 @@
 
 	<script type="text/javascript" src="{{ URL::asset('js/jquery-3.1.1.min.js') }}"></script>
 	<script type="text/javascript" src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
-	<script type="text/javascript" src="{{ URL::asset('js/skrollr.min.js') }}"></script>
 </head>
 
 <body>
 	@yield('content')
-	<script type="text/javascript">
-	var s = skrollr.init();
-	</script>
 </body>
 </html>
