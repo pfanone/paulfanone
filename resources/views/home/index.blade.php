@@ -30,10 +30,12 @@
 		</div>
 		<div class="col-xs-12 col-sm-7 col-lg-6">
 			<div class="exp_container">
-				<p class="about">WhoPlusYou.com</p>
+				<p class="header">WhoPlusYou.com</p>
+				<p class="desc">Web Developer</p>
 			</div>
 			<div class="exp_container">
-				<p class="about">Ryerson University</p>
+				<p class="header">Ryerson University</p>
+				<p class="desc">Computer Science</p>
 			</div>
 		</div>
 	</div>
