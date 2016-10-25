@@ -10,7 +10,7 @@ html, body { height: 100%; }
     text-shadow: 2px 2px 4px #000000;
 
     position: absolute;
-    bottom: 20px;
+    bottom: 50px;
 }
 
 .sub-title {
@@ -31,6 +31,6 @@ html, body { height: 100%; }
 	background-size:   cover;
 	
     height: 700px;
+}
 
-    position: relative;
- }
+.title-container { position: relative; }

@@ -5,7 +5,7 @@
 
 <div class="container-fluid title-div">
 	<div class="row">
-		<div class="col-xs-12 text-center">
+		<div class="col-xs-12 text-center title-container">
 			<div class="title">Paul Fanone</div>
 		</div>
 	</div>
