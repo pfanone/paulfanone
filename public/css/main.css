@@ -12,5 +12,9 @@
 	font-size: 80px;
 }
  .title-div {
-    background-image: url('img/iceland_1.jpg') cover no-repeat;
+    background: url('img/iceland_1.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
  }
