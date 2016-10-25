@@ -1,4 +1,7 @@
-html, body { height: 100%; }
+html, body {
+	height: 100%; 
+	font-family: 'Lato';
+}
 
 .title {
 	font-weight: 100;
@@ -32,6 +35,7 @@ html, body { height: 100%; }
 }
 
 .title-container {
+	width:100%;
 	position: absolute;
     bottom: 50px;
 }
