@@ -13,7 +13,7 @@ html, body {
 	font-size: 96px;
 
 	color: white;
-    text-shadow: 2px 2px 4px #000000;
+	text-shadow: 2px 2px 4px #000000;
 }
 
 .sub-title {
@@ -29,18 +29,18 @@ html, body {
 	background: radial-gradient(circle, transparent 20%, rgba(41, 128, 185,0.7) 60%), url('/images/Fanone.jpg');	/* Standard syntax */	
 
 	background-repeat: no-repeat;
-	background-size:   cover;
-    background-position: top;
+	background-size: cover;
+	background-position: top;
 
 	position: relative;
 	
-    height: 550px;
+	height: 550px;
 }
 
 .title-container {
 	width:100%;
 	position: absolute;
-    bottom: 10px;
+	bottom: 10px;
 }
 
 p.about {
@@ -61,4 +61,16 @@ h2.about {
 
 @media (max-width: 425px) {
 	.title { font-size: 70px; }
+}
+
+@media (min-width: 1050px) {
+    .title-div {
+        background-image:  url('/images/Fanone.jpg');
+        
+        background: -webkit-radial-gradient(circle, transparent, transparent, #2980b9), url('/images/Fanone.jpg');      /* Safari 5.1 to 6.0 */
+        background: -moz-radial-gradient(circle, transparent, transparent, #2980b9), url('/images/Fanone.jpg');         /* For Firefox 3.6 to 15 */
+        background: -o-radial-gradient(circle, transparent, transparent, #2980b9), url('/images/Fanone.jpg');           /* For Opera 11.6 to 12.0 */
+        background: radial-gradient(circle, transparent 20%, rgba(41, 128, 185, 1) 60%), url('/images/Fanone.jpg');    /* Standard syntax */   
+        background-size: contain;
+    }
 }
