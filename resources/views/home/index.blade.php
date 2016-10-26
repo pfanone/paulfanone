@@ -33,6 +33,7 @@
 			<div class="exp_container">
 				<p class="header">Senior Web Developer - WhoPlusYou.com</p>
 				<p class="desc">Worked to build the platform front-end and back-end, using PHP, MySQL and Javascript.  Took part in designing and building many of the main features of the site and assisted with overall project management.</p>
+				<p class="desc">WhoPlusYou is a job matching platform that uses advanded algorithms to match qualified canidates with their perfect careers.</p>
 			</div>
 			<div class="exp_container">
 				<p class="header">Bachelor of Computer Science - Ryerson University</p>
