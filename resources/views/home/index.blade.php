@@ -19,7 +19,8 @@
 		<div class="col-xs-12 col-sm-7 col-lg-6">
 			<p class="about">I'm an adaptable programmer that can create specialized solutions to meet any requirement.</p>
 			<p class="about">Experienced in many languages including PHP, Javascript, MySQL, HTML, and CSS. I'm also open to learning new languages as needed.</p>
-			<p class="about">I'm a nerd who likes sports just as much as I like Star Wars &amp; Dr. Who, and having fun with the people I work with is as important to me as building cool, interesting websites that are easy for people to use.</p>
+			<p class="about">I'm a nerd who likes sports just as much as I like Star Wars &amp; Dr. Who</p>
+			<p class="about">Having fun with the people I work with is as important to me as building cool, interesting websites that are easy for people to use.</p>
 		</div>
 	</div>
 </div>
