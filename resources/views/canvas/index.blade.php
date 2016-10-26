@@ -3,10 +3,10 @@
 
 @section('content')
 
-<div class="container-fluid title-div">
-	<div class="row title-container">
+<div class="container-fluid">
+	<div class="row">
 		<div class="col-xs-12 text-center">
-			<div class="title">Canvas</div>
+			<h2>Canvas</h2>
 		</div>
 	</div>
 </div>
@@ -14,7 +14,7 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-xs-12">
-			<canvas id="canvas" width="300" height="300"></canvas>
+			<canvas id="canvas" width="100%" height="600"></canvas>
 		</div>
 	</div>
 </div>
