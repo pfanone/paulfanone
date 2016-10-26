@@ -5,6 +5,12 @@
 
 <style type="text/css">
 body { background-color: #2980b9; }
+
+.canvas-container {
+	background-color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+}
 </style>
 	
 </style>
