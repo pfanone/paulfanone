@@ -30,12 +30,12 @@
 		</div>
 		<div class="col-xs-12 col-sm-7 col-lg-6">
 			<div class="exp_container">
-				<p class="header">Web Developer - WhoPlusYou.com</p>
-				<p class="desc">Worked to build the platform front-end and back-end, using PHP, MySQL and Javascript. Took part in designing and building many main features, as well as taking part in managing projects.</p>
+				<p class="header">Senior Web Developer - WhoPlusYou.com</p>
+				<p class="desc">Worked to build the platform front-end and back-end, using PHP, MySQL and Javascript.  Took part in designing and building many of the main features of the site and assisting with overall project management.</p>
 			</div>
 			<div class="exp_container">
-				<p class="header">Computer Science - Ryerson University</p>
-				<p class="desc">Studied Computer Science, learning the core aspects of computer programming, indlucing Object-Oriented, Artificial Intelligence, Computer Graphics, Robotics, and others.</p>
+				<p class="header">Bachelor of Computer Science - Ryerson University</p>
+				<p class="desc">Studied Computer Science, learning the core aspects of computer programming, including object-oriented programing, artificial intelligence, computer graphics, robotics, and others.</p>
 			</div>
 		</div>
 	</div>
