@@ -3,6 +3,12 @@
 
 @section('content')
 
+<style type="text/css">
+body { background-color: #2980b9; }
+</style>
+	
+</style>
+
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-xs-12 text-center">
@@ -13,8 +19,8 @@
 
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-xs-12">
-			<canvas id="canvas" width="100%" height="600"></canvas>
+		<div class="col-xs-12 text-center">
+			<canvas id="canvas" width="600" height="600"></canvas>
 		</div>
 	</div>
 </div>
