@@ -31,7 +31,7 @@
 		</div>
 		<div class="col-xs-12 col-sm-7 col-lg-6">
 			<div class="exp_container">
-				<p class="header">Senior Web Developer - WhoPlusYou.com</p>
+				<p class="header">Senior Web Developer - WhoPlusYou.com <span class="text-right">5 years</span></p>
 				<p class="desc">Worked to build the platform front-end and back-end, using PHP, MySQL and Javascript.  Took part in designing and building many of the main features of the site and assisted with overall project management.</p>
 				<p class="desc">WhoPlusYou is a job matching platform that uses advanded algorithms to match qualified canidates with their perfect careers.</p>
 			</div>
