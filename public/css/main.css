@@ -85,6 +85,7 @@ h2.about {
 
 @media (min-width: 1100px) {
     .title-div {
+    	background-color: #2980b9;
         background-image:  url('/images/Fanone.jpg');
         
         background: -webkit-radial-gradient(circle, transparent, transparent, #2980b9), url('/images/Fanone.jpg');      /* Safari 5.1 to 6.0 */
