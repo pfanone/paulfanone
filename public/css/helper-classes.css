@@ -1,4 +1,10 @@
 /*
+ 	Float Classes
+ */
+.pull-left   { float: left; }
+.pull-right  { float: right; }
+
+/*
  	Text Align Classes
  */
 .text-center { text-align: center; }
