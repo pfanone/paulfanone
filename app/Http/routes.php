@@ -15,3 +15,4 @@ Route::get('/', 'HomeController@anyIndex');
 
 Route::controller('home', 'HomeController');
 Route::controller('canvas', 'CanvasController');
+Route::controller('parallax', 'ParallaxController');
