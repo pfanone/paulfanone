@@ -61,6 +61,7 @@
 
 
 <script type="text/javascript" src="{{ URL::asset('js/skrollr.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('js/imagesloaded.js') }}"></script>
 <script type="text/javascript" src="{{ URL::asset('js/_main.js') }}"></script>
 
 @endsection
