@@ -32,7 +32,7 @@
 	<link rel="stylesheet" href="{{ URL::asset('css/main.css') }}" />
 	<link rel="stylesheet" href="{{ URL::asset('css/helper-classes.css') }}" />
 
-	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="{{ URL::asset('js/jquery-3.1.1.min.js') }}"></script>
 	<script type="text/javascript" src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
 </head>
 
