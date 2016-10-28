@@ -125,7 +125,6 @@ h2 {
 }
 section {
 	min-width: 960px;
-	opacity: 0;
 }
 .loaded section,
 .no-js section {
@@ -185,14 +184,26 @@ main {
 	}
 
 /* Slide 1 */
-#slide-1 .bcg {background-image:url('/images/bcg_slide-1.jpg')}
+#slide-1 .bcg {
+   background-image:  url('/images/Fanone.jpg');
+    
+    background: -webkit-radial-gradient(circle, transparent, transparent, #2980b9), url('/images/Fanone.jpg');      /* Safari 5.1 to 6.0 */
+    background: -moz-radial-gradient(circle, transparent, transparent, #2980b9), url('/images/Fanone.jpg');         /* For Firefox 3.6 to 15 */
+    background: -o-radial-gradient(circle, transparent, transparent, #2980b9), url('/images/Fanone.jpg');           /* For Opera 11.6 to 12.0 */
+    background: radial-gradient(circle, transparent 20%, rgba(41, 128, 185,0.7) 60%), url('/images/Fanone.jpg');    /* Standard syntax */   
+
+    background-color: #2980b9;
+}
 #slide-1 .hsContent {
 	bottom: 200px;
 	top: auto;
 }
 
 /* Slide 2 */
-#slide-2 .bcg {background-image:url('/images/bcg_slide-2.jpg')}
+#slide-2 .bcg {
+    background-color: #fff;
+    /*background-image:url('/images/bcg_slide-2.jpg')*/
+}
 #slide-2 .hsContent {
 	margin-left: -450px;
 	bottom: 200px;
@@ -200,7 +211,10 @@ main {
 }
 
 /* Slide 3 */
-#slide-3 .bcg {background-image:url('/images/bcg_slide-3.jpg')}
+#slide-3 .bcg {
+    background-color: #2980b9;
+    /*background-image: url('/images/bcg_slide-3.jpg');*/
+}
 #slide-3 .hsContent {
 	margin-left: -239px;
 }
