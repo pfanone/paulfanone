@@ -64,4 +64,12 @@
 <script type="text/javascript" src="{{ URL::asset('js/imagesloaded.js') }}"></script>
 <script type="text/javascript" src="{{ URL::asset('js/_main.js') }}"></script>
 
+<script type="text/javascript">
+// Init Skrollr
+var s = skrollr.init();
+ 
+// Refresh Skrollr after resizing our sections
+s.refresh($('.homeSlide'));
+</script>
+
 @endsection
