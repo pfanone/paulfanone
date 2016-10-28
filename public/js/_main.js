@@ -21,9 +21,6 @@
 		      
 		      // Resize sections
 		      adjustWindow();
-		      
-		      // Fade in sections
-			  $body.removeClass('loading').addClass('loaded');
 			  
 		}, 800);
 	});
