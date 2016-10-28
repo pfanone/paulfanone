@@ -193,10 +193,15 @@ main {
     background: radial-gradient(circle, transparent 20%, rgba(41, 128, 185,0.7) 60%), url('/images/Fanone.jpg');    /* Standard syntax */   
 
     background-color: #2980b9;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
 }
 #slide-1 .hsContent {
 	bottom: 200px;
 	top: auto;
+    color:#fff;
 }
 
 /* Slide 2 */

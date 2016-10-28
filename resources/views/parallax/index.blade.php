@@ -15,12 +15,12 @@
 	<section id="slide-1" class="homeSlide">
 		<div class="bcg">
 			<div class="hsContainer">
-				<div class="hsContent padT50 padB50">
+				<div class="hsContent">
 					<div class="row">
-						<div class="col-xs-12 col-sm-3 col-sm-offset-1 col-lg-2 col-lg-offset-2 text-center">
+						<div class="col-xs-12 text-center">
 							<h2 class="about">About Paul</h2>
 						</div>
-						<div class="col-xs-12 col-sm-7 col-lg-6">
+						<div class="col-xs-12">
 							<p class="about">I'm an adaptable programmer that can create specialized solutions to meet any requirement.</p>
 							<p class="about">Experienced in many languages including PHP, Javascript, MySQL, HTML, and CSS. I'm also open to learning new languages as needed.</p>
 							<p class="about">I'm a nerd who likes sports just as much as I like Star Wars &amp; Dr. Who. Having fun with the people I work with is as important to me as building cool, interesting websites that are easy for people to use.</p>
