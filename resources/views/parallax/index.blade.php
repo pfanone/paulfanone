@@ -7,13 +7,13 @@
 <link rel="stylesheet" href="{{ URL::asset('css/normalize.css') }}" />
 
 <div id="preload">
-   	<img src="img/bcg_slide-1.jpg">
-   	<img src="img/bcg_slide-2.jpg">
-   	<img src="img/bcg_slide-3.jpg">
-   	<img src="img/bcg_slide-4.jpg">
-	</div>
+	<img src="{{ URL::asset('images/bcg_slide-1.jpg') }}">
+	<img src="{{ URL::asset('images/bcg_slide-2.jpg') }}">
+	<img src="{{ URL::asset('images/bcg_slide-3.jpg') }}">
+	<img src="{{ URL::asset('images/bcg_slide-4.jpg') }}">
+</div>
 	
-	<main>
+<main>
 	 
 	<section id="slide-1" class="homeSlide">
 		<div class="bcg">
