@@ -16,6 +16,16 @@
 		<div class="bcg">
 			<div class="hsContainer">
 				<div class="hsContent">
+					<h2>Paul Fanone</h2>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="slide-2" class="homeSlide">
+		<div class="bcg">
+			<div class="hsContainer">
+				<div class="hsContent">
 					<div class="row">
 						<div class="col-xs-12 text-center">
 							<h2 class="about">About Paul</h2>
@@ -26,16 +36,6 @@
 							<p class="about">I'm a nerd who likes sports just as much as I like Star Wars &amp; Dr. Who. Having fun with the people I work with is as important to me as building cool, interesting websites that are easy for people to use.</p>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-	<section id="slide-2" class="homeSlide">
-		<div class="bcg">
-			<div class="hsContainer">
-				<div class="hsContent">
-					<h2>great for story telling websites.</h2>
 				</div>
 			</div>
 		</div>
