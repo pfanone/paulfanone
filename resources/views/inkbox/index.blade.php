@@ -8,7 +8,7 @@
 <div class="container-fluid">
 	<div class="row main-bg">
 		<div class="col-xs-12 main-header">
-			<h1 class="padL15">Inkbox Analytics</h1>
+			<h1 class="padL15"><img src="{{ URL::asset('images/logo.png') }}"> Analytics</h1>
 		</div>
 	</div>
 
