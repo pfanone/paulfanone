@@ -6,8 +6,9 @@
 <link rel="stylesheet" href="{{ URL::asset('css/inkbox.css') }}" />
 
 <div class="row main-bg">
-	<div class="col-xs-12"><h1>test</h1></div>
-	
+	<div class="col-xs-12">
+		<h1>test</h1>
+	</div>
 </div>
 
 <div class="row graph-bg">
