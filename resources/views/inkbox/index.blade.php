@@ -70,7 +70,8 @@
 		$("#user_graph").append('</div>');
 
 		$("#user_graph").append('<div class="col-xs-12">\
-			<p>' + data['user_data_array']['Day'] + '</p>\
+			<h4>Users Today</h4>\
+			<p>' + data['user_data_array']['Day']['count'] + '</p>\
 		</div>');
 
 		
