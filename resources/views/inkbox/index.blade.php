@@ -12,18 +12,14 @@
 		</div>
 	</div>
 
-	<div class="row">
-		<div class="col-xs-12 col-sm-6 col-md-3 graph-div" id="user_graph"></div>
-		<div class="col-xs-12 col-sm-6 col-md-3" id="tattoo_graph"></div>
-		<div class="col-xs-12 col-sm-6 col-md-3" id="tattoo_user_graph"></div>
-	</div>
+	<div class="row" id="graphs_container"></div>
 </div>
 
 <script type="text/javascript" src="{{ URL::asset('js/chart.js') }}"></script>
 
 <script type="text/javascript">
 	$.post("/inkbox/userdata", function(data) {
-		$("#user_graph").html('<canvas id="user_data_chart" width="400" height="400"></canvas>');
+		$("#graphs_container").append('<div class="col-xs-12 col-sm-6 col-md-3 graph-div" id="user_graph"><canvas id="user_data_chart" width="400" height="400"></canvas></div>');
 		var ctx = document.getElementById("user_data_chart");
 		var myChart = new Chart(ctx, {
 			type: 'line',
