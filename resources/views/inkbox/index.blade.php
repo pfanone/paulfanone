@@ -49,6 +49,18 @@
 				tooltips: {
 					enabled: false
 				}
+				scales: {
+				    xAxes: [{
+				                gridLines: {
+				                    display:false
+				                }
+				            }],
+				    yAxes: [{
+				                gridLines: {
+				                    display:false
+				                }
+				            }]
+    			}
 			}
 		});
 		console.log("user_data", data);
