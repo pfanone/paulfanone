@@ -75,6 +75,6 @@ class InkboxController extends BaseController
 		$return_array['date_as_of_array'] = $date_as_of;
 		$return_array['count_array'] = $count;
 
-		return $return_array;
+		return View::make("inkbox.partials.tattoo_graph", $return_array)->render();
 	}
 }
