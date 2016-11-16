@@ -12,7 +12,7 @@ class VerifyCsrfToken extends BaseVerifier
      * @var array
      */
     protected $except = [
-        'inkbox/userdata'
+        // 'inkbox/userdata'
     ];
 
     /**
@@ -32,17 +32,7 @@ class VerifyCsrfToken extends BaseVerifier
 
 	public function handle($request, \Closure $next)
     {
-    	if(env('APP_ENV') == 'testing')
-    	{
-    		return $next($request);
-    	}
-
-        if($this->excludedRoutes($request))
-        {
-            return $next($request);
-        }
-
-    	return parent::handle($request, $next);
+    	return $next($request);
     }
 
     /**
