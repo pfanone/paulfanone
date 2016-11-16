@@ -45,11 +45,7 @@
 					display: false
 				},
 				tooltips: {
-					callbacks: {
-					label: function(tooltipItem) {
-							return tooltipItem.yLabel;
-						}
-					}
+					enabled: false
 				}
 			}
 		});
