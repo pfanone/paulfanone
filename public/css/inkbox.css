@@ -22,3 +22,11 @@ body {
 	margin-top: 10px;
 	background-color: #1D272F;
 }
+
+.graph-div-full {
+	min-height: 292px;
+}
+
+.graph-div-half {
+	min-height: 146px;
+}
