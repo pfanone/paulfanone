@@ -3,10 +3,12 @@
 
 @section("content")
 
-<div class="row">
-	<div class="col-xs-12"><h1>test</h1></div>
-	<div class="col-xs-12">
-		<div class="well" id="user_graph"></div>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12"><h1>test</h1></div>
+		<div class="col-xs-12">
+			<div class="well" id="user_graph"></div>
+		</div>
 	</div>
 </div>
 
