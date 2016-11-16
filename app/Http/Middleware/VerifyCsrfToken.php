@@ -12,7 +12,7 @@ class VerifyCsrfToken extends BaseVerifier
      * @var array
      */
     protected $except = [
-        'inkbox/userdate'
+        'inkbox/userdata'
     ];
 
     /**
