@@ -51,17 +51,17 @@
 					enabled: false
 				},
 				scales: {
-				    xAxes: [{
-				                gridLines: {
-				                    display:false
-				                }
-				            }],
-				    yAxes: [{
-				                gridLines: {
-				                    display:false
-				                }
-				            }]
-    			}
+					xAxes: [{
+								gridLines: {
+									display:false
+								}
+							}],
+					yAxes: [{
+								gridLines: {
+									display:false
+								}
+							}]
+				}
 			}
 		});
 
