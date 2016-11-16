@@ -12,7 +12,7 @@ class VerifyCsrfToken extends BaseVerifier
      * @var array
      */
     protected $except = [
-        //
+        'inkbox/userdate'
     ];
 
     /**
@@ -29,4 +29,34 @@ class VerifyCsrfToken extends BaseVerifier
 
 	    return $request->session()->token() == $token;
 	}
+
+	public function handle($request, \Closure $next)
+    {
+    	if(env('APP_ENV') == 'testing')
+    	{
+    		return $next($request);
+    	}
+
+        if($this->excludedRoutes($request))
+        {
+            return $next($request);
+        }
+
+    	return parent::handle($request, $next);
+    }
+
+    /**
+     * This will return a bool value based on route checking.
+
+     * @param  Request $request
+     * @return boolean
+     */
+    protected function excludedRoutes($request)
+    {
+        foreach($this->except as $route)
+            if ($request->is($route))
+                return true;
+
+            return false;
+    }
 }
