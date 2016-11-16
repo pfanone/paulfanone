@@ -1,0 +1,238 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"origin",
+				"originID"
+			],
+			[
+				"back",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "inst",
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Install Package Control"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Sites/paulfanone"
+	],
+	"file_history":
+	[
+		"/C/laragon/www/WhoPlusYou-Html5/app/Models/user/origin.php",
+		"/C/laragon/www/WhoPlusYou-Html5/app/Models/Landingpage.php",
+		"/D/Sites/inkbox_analytics/resources/views/home/index.blade.php",
+		"/C/laragon/www/WhoPlusYou-Html5/app/Models/Resume.php",
+		"/D/Sites/inkbox_analytics/app/Http/routes.php",
+		"/C/laragon/www/WhoPlusYou-Html5/app/Models/affiliationdashboard.php",
+		"/D/Sites/paulfanone/public/css/helper-classes.css",
+		"/D/Sites/paulfanone/public/css/main.css",
+		"/D/Sites/paulfanone/resources/views/home/index.blade.php",
+		"/D/Sites/paulfanone/resources/views/canvas/index.blade.php",
+		"/D/Sites/paulfanone/app/Http/Controllers/CanvasController.php",
+		"/D/Sites/paulfanone/resources/views/layout/main.blade.php",
+		"/D/Sites/paulfanone/public/js/fabric.js",
+		"/D/Sites/paulfanone/public/js/fabric.require.js",
+		"/D/Sites/paulfanone/public/js/fabric.min.js",
+		"/C/Users/pfano/AppData/Local/Temp/Rar$DIa0.706/README.md",
+		"/D/Sites/paulfanone/public/js/canvas.js",
+		"/D/Sites/paulfanone/app/Http/routes.php",
+		"/C/Users/pfano/AppData/Local/Temp/Rar$DIa0.491/README.md",
+		"/C/Users/pfano/Downloads/parallax-scroll-effect-1302/parallax/js/main.js",
+		"/C/Users/pfano/Downloads/parallax-scroll-effect-1302/parallax/js/skrollr.js",
+		"/C/Users/pfano/Downloads/parallax-scroll-effect-1302/parallax/js/_main.js",
+		"/C/Users/pfano/Downloads/parallax-scroll-effect-1302/parallax/index.html",
+		"/C/Users/pfano/Downloads/parallax-scroll-effect-1302/parallax/js/imagesloaded.js",
+		"/D/Sites/paulfanone/public/js/skollr.min.js",
+		"/C/Users/pfano/AppData/Local/Temp/Temp1_parallax.js-1.4.2.zip/parallax.js-1.4.2/README.md",
+		"/C/Users/pfano/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"",
+			"localdev",
+			"<open files>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"__DIR__ = ",
+			"__DIR__",
+			"localdev",
+			"setaffil",
+			"affiliation",
+			"    ",
+			"\"/img",
+			"    ",
+			"href=\"/",
+			"\n\n\n",
+			"\n\n\n\n\n\n\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\t",
+			"\"img",
+			"\t",
+			"href=\"/favicon/",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "paulfanone.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"envi",
+				"bootstrap\\environment.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 132.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
