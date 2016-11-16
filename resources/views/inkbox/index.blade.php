@@ -68,19 +68,19 @@
 		$("#user_graph_container").append('<div class="col-xs-12 col-sm-2">\
 			<div class="graph-div">\
 				<h4>Users Today</h4>\
-				<p>' + data['user_data_array']['Day']['count'] + '</p>\
+				<h2>' + data['user_data_array']['Day']['count'] + '</h2>\
 			</div>\
 		</div>');
 		$("#user_graph_container").append('<div class="col-xs-12 col-sm-2">\
 			<div class="graph-div">\
-				<h4>Users Today</h4>\
-				<p>' + data['user_data_array']['Week']['count'] + '</p>\
+				<h4>Users This Week</h4>\
+				<h2>' + data['user_data_array']['Week']['count'] + '</h2>\
 			</div>\
 		</div>');
 		$("#user_graph_container").append('<div class="col-xs-12 col-sm-2">\
 			<div class="graph-div">\
-				<h4>Users Today</h4>\
-				<p>' + data['user_data_array']['Month']['count'] + '</p>\
+				<h4>Users This Month</h4>\
+				<h2>' + data['user_data_array']['Month']['count'] + '</h2>\
 			</div>\
 		</div>');
 	});
