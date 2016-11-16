@@ -1,6 +1,12 @@
 <div class="col-xs-12">
 	<div class="row">
 		<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
+			<div id="user_graph" class="graph-div graph-div-full">
+				<canvas id="user_data_chart" width="400" height="400"></canvas>
+			</div>
+		</div>
+		
+		<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
 			<div class="graph-div graph-div-half">
 				<h2>Users Logins</h2>
 			</div>
@@ -24,12 +30,6 @@
 			<div class="graph-div graph-div-half">
 				<h4>Users This Month</h4>
 				<h2>{!! $user_data_array['Month']['count'] !!}</h2>
-			</div>
-		</div>
-
-		<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-			<div id="user_graph" class="graph-div graph-div-full">
-				<canvas id="user_data_chart" width="400" height="400"></canvas>
 			</div>
 		</div>
 	</div>
