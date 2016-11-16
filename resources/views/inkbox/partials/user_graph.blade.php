@@ -5,10 +5,11 @@
 				<canvas id="user_data_chart" width="400" height="400"></canvas>
 			</div>
 		</div>
-		
+
 		<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
 			<div class="graph-div graph-div-half">
-				<h2>Users Logins</h2>
+				<h4>Users All Time</h4>
+				<h2>{!! $user_data_array['All']['count'] !!}</h2>
 			</div>
 		</div>
 

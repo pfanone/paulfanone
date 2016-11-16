@@ -8,6 +8,13 @@
 
 		<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
 			<div class="graph-div graph-div-half">
+				<h4>Tattoos All Time</h4>
+				<h2>{!! $tattoo_data_array['All']['count'] !!}</h2>
+			</div>
+		</div>
+
+		<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
+			<div class="graph-div graph-div-half">
 				<h4>Tattoos Today</h4>
 				<h2>{!! $tattoo_data_array['Day']['count'] !!}</h2>
 			</div>
