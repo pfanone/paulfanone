@@ -19,7 +19,7 @@
 
 <script type="text/javascript">
 	$.post("/inkbox/userdata", function(data) {
-		$("#user_graph_container").append('<div class="col-xs-12 col-sm-4 col-md-3 graph-div" id="user_graph"></div>');
+		$("#user_graph_container").append('<div class="col-xs-12 col-sm-4 col-md-3"><div id="user_graph" class="graph-div"></div></div>');
 
 		$("#user_graph").append('<canvas id="user_data_chart" width="400" height="400"></canvas>');
 
@@ -65,9 +65,11 @@
 			}
 		});
 
-		$("#user_graph_container").append('<div class="col-xs-12 col-sm-2 graph-div">\
-			<h4>Users Today</h4>\
-			<p>' + data['user_data_array']['Day']['count'] + '</p>\
+		$("#user_graph_container").append('<div class="col-xs-12 col-sm-2">\
+			<div class="graph-div">\
+				<h4>Users Today</h4>\
+				<p>' + data['user_data_array']['Day']['count'] + '</p>\
+			</div>\
 		</div>');
 	});
 </script>
