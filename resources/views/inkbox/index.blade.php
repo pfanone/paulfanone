@@ -12,7 +12,7 @@
 		</div>
 	</div>
 
-	<div class="row" id="user_graph_container"></div>
+	<div class="row marginT10" id="user_graph_container"></div>
 </div>
 
 <script type="text/javascript" src="{{ URL::asset('js/chart.js') }}"></script>
@@ -69,6 +69,18 @@
 			<div class="graph-div">\
 				<h4>Users Today</h4>\
 				<p>' + data['user_data_array']['Day']['count'] + '</p>\
+			</div>\
+		</div>');
+		$("#user_graph_container").append('<div class="col-xs-12 col-sm-2">\
+			<div class="graph-div">\
+				<h4>Users Today</h4>\
+				<p>' + data['user_data_array']['Week']['count'] + '</p>\
+			</div>\
+		</div>');
+		$("#user_graph_container").append('<div class="col-xs-12 col-sm-2">\
+			<div class="graph-div">\
+				<h4>Users Today</h4>\
+				<p>' + data['user_data_array']['Month']['count'] + '</p>\
 			</div>\
 		</div>');
 	});
