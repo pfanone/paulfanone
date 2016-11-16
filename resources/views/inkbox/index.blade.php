@@ -26,7 +26,6 @@
 		$("#user_graph").html('<canvas id="user_data_chart" width="400" height="400"></canvas>');
 		var ctx = document.getElementById("user_data_chart");
 		var myChart = new Chart(ctx, {
-			label: "",
 			type: 'bar',
 			data: {
 				labels: data['interval_array'],
