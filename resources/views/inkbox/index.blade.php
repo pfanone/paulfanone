@@ -10,7 +10,7 @@
 	</div>
 </div>
 
-{!! HTML::script('/js/chart.js') !!}
+<script type="text/javascript" src="{{ URL::asset('js/chart.js') }}"></script>
 
 <script type="text/javascript">
 	$.post("/inkbox/userdata", function(data) {
