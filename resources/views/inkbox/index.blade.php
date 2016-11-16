@@ -5,7 +5,7 @@
 
 <link rel="stylesheet" href="{{ URL::asset('css/inkbox.css') }}" />
 
-<div class="container-fluid">
+<div class="container main-bg">
 	<div class="row">
 		<div class="col-xs-12"><h1>test</h1></div>
 		<div class="col-xs-12 col-sm-6 col-md-3" id="user_graph"></div>
