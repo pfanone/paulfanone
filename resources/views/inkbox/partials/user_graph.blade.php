@@ -9,21 +9,21 @@
 		<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
 			<div class="graph-div graph-div-half">
 				<h4>Users Today</h4>
-				<h2>{{ $user_data_array['Day']['count'] }}</h2>
+				<h2>{!! $user_data_array['Day']['count'] !!}</h2>
 			</div>
 		</div>
 
 		<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
 			<div class="graph-div graph-div-half">
 				<h4>Users This Week</h4>
-				<h2>{{ $user_data_array['Week']['count'] }}</h2>
+				<h2>{!! $user_data_array['Week']['count'] !!}</h2>
 			</div>
 		</div>
 
 		<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
 			<div class="graph-div graph-div-half">
 				<h4>Users This Month</h4>
-				<h2>{{ $user_data_array['Month']['count'] }}</h2>
+				<h2>{!! $user_data_array['Month']['count'] !!}</h2>
 			</div>
 		</div>
 	</div>
@@ -34,9 +34,9 @@
 	var myChart = new Chart(ctx, {
 		type: 'bar',
 		data: {
-			labels: {{ $interval_array }},
+			labels: {!! $interval_array !!},
 			datasets: [{
-				data: {{ $count_array }},
+				data: {!! $count_array !!},
 					backgroundColor: [
 						'rgba(54, 162, 235, 0.2)',
 						'rgba(54, 162, 235, 0.2)',
