@@ -19,7 +19,7 @@
 
 <script type="text/javascript">
 	$.post("/inkbox/userdata", function(data) {
-		$("#user_graph_container").append('<div class="col-xs-12 col-sm-4 col-md-3"><div id="user_graph" class="graph-div"></div></div>');
+		$("#user_graph_container").append('<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2"><div id="user_graph" class="graph-div"></div></div>');
 
 		$("#user_graph").append('<canvas id="user_data_chart" width="400" height="400"></canvas>');
 
@@ -65,19 +65,19 @@
 			}
 		});
 
-		$("#user_graph_container").append('<div class="col-xs-12 col-sm-2">\
+		$("#user_graph_container").append('<div class="col-xs-12 col-sm-3 col-md-2 col-lg-1">\
 			<div class="graph-div">\
 				<h4>Users Today</h4>\
 				<h2>' + data['user_data_array']['Day']['count'] + '</h2>\
 			</div>\
 		</div>');
-		$("#user_graph_container").append('<div class="col-xs-12 col-sm-2">\
+		$("#user_graph_container").append('<div class="col-xs-12 col-sm-3 col-md-2 col-lg-1">\
 			<div class="graph-div">\
 				<h4>Users This Week</h4>\
 				<h2>' + data['user_data_array']['Week']['count'] + '</h2>\
 			</div>\
 		</div>');
-		$("#user_graph_container").append('<div class="col-xs-12 col-sm-2">\
+		$("#user_graph_container").append('<div class="col-xs-12 col-sm-3 col-md-2 col-lg-1">\
 			<div class="graph-div">\
 				<h4>Users This Month</h4>\
 				<h2>' + data['user_data_array']['Month']['count'] + '</h2>\
