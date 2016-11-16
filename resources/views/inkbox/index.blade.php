@@ -12,9 +12,7 @@
 		</div>
 	</div>
 
-	<div class="row" id="user_graph_container">
-		<div class="col-xs-12 col-sm-6 col-md-3" id="user_graph"></div>
-	</div>
+	<div class="row" id="user_graph_container"></div>
 </div>
 
 <script type="text/javascript" src="{{ URL::asset('js/chart.js') }}"></script>
