@@ -21,7 +21,7 @@
 		var myChart = new Chart(ctx, {
 		    type: 'bar',
 		    data: {
-		        labels: data['inverval_array'],
+		        labels: data['interval_array'],
 		        datasets: [{
 		            label: '# of Votes',
 		            data: data['count_array'],
