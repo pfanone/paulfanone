@@ -13,7 +13,7 @@
 	</div>
 
 	<div class="row">
-		<div class="col-xs-12 col-sm-6 col-md-3 graph-bg" id="user_graph"></div>
+		<div class="col-xs-12 col-sm-6 col-md-3 graph-div" id="user_graph"></div>
 		<div class="col-xs-12 col-sm-6 col-md-3" id="tattoo_graph"></div>
 		<div class="col-xs-12 col-sm-6 col-md-3" id="tattoo_user_graph"></div>
 	</div>
