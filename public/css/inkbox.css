@@ -1,11 +1,11 @@
 body {
-	background-image: url(/images/bg3.jpg);
+	background-color: #14181B;
 	color: #fff;
 }
 
 .main-header {
-	background-color: #3f3f3f;
-	color: #fff;
+	background-image: url(/images/bg3.jpg);
+	color: #3f3f3f;
 }
 
 .graph-div {
