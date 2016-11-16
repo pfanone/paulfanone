@@ -25,6 +25,7 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
+	<meta name="csrf-token" content="{{ csrf_token() }}" />
 
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,400,700" rel="stylesheet">
 	
@@ -46,5 +47,12 @@
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript">
+		$.ajaxSetup({
+			headers: {
+				'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+			}
+		});
+		</script>
 </body>
 </html>
