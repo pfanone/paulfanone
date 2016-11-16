@@ -16,19 +16,3 @@ body {
 .graph-div {
 	margin-top: 10px;
 }
-
-#user_graph {
-   position: relative;
-}
-#user_graph:after {
-    content : "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url(/images/bcg_slide-1.jpg); 
-    width: 100%;
-    height: 100%;
-    opacity : 0.2;
-    z-index: -1;
-}
