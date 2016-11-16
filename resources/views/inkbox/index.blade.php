@@ -33,9 +33,13 @@
 				datasets: [{
 					data: data['count_array'],
 					backgroundColor: [
+						'rgba(54, 162, 235, 0.2)',
+						'rgba(54, 162, 235, 0.2)',
 						'rgba(54, 162, 235, 0.2)'
 					],
 					borderColor: [
+						'rgba(54, 162, 235, 1)',
+						'rgba(54, 162, 235, 1)',
 						'rgba(54, 162, 235, 1)'
 					],
 					borderWidth: 1
