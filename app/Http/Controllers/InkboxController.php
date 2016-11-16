@@ -12,9 +12,22 @@ use Illuminate\Http\Request;
 use DB;
 use View;
 
-class HomeController extends BaseController
+class InkboxController extends BaseController
 {
 	public function anyIndex() {
-		return View::make('home.index');
+		$return_array = array();
+		$data_array = array();
+
+		$select = DB::select("SELECT id FROM designs LIMIT 10", array());
+
+		foreach ($select as $key => $value) {
+			array_push($data_array, array(
+					'id' => $value->id
+				));
+		}
+
+		$return_array['designs'] = $data_array;
+
+		return View::make('inkbox.index', $return_array);
 	}
 }
