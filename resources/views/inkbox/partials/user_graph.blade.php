@@ -34,9 +34,9 @@
 	var myChart = new Chart(ctx, {
 		type: 'bar',
 		data: {
-			labels: {!! $interval_array !!},
+			labels: {{ $interval_array }},
 			datasets: [{
-				data: {!! $count_array !!},
+				data: {{ $count_array }},
 					backgroundColor: [
 						'rgba(54, 162, 235, 0.2)',
 						'rgba(54, 162, 235, 0.2)',
