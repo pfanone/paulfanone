@@ -1,7 +1,16 @@
+body {
+	background-color: #14181B;
+}
+
 .main-bg {
 	background-image: url(/images/bcg_slide-1.jpg);
-	background-position: cover;
+	background-repeat: no-repeat;
+	background-position: center; 
 	min-height: 400px;
+}
+
+.main-header {
+	background-color: rgba(255,255,255,0.2);
 }
 
 .graph-bg {
