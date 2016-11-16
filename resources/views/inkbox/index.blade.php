@@ -21,7 +21,11 @@
 
 <script type="text/javascript">
 	$.post("/inkbox/userdata", function(data) {
+		$("#user_graph").append('<div class="row">');
+		$("#user_graph").append('<div class="col-xs-12">');
+
 		$("#user_graph").append('<canvas id="user_data_chart" width="400" height="400"></canvas>');
+
 		var ctx = document.getElementById("user_data_chart");
 		var myChart = new Chart(ctx, {
 			type: 'line',
@@ -63,7 +67,14 @@
     			}
 			}
 		});
-		console.log("user_data", data);
+		$("#user_graph").append('</div>');
+
+		$("#user_graph").append('<div class="col-xs-12">\
+			<p>' + data['user_data_array']['day'] + '</p>\
+		</div>');
+
+		
+		$("#user_graph").append('</div>');
 	});
 </script>
 @endsection

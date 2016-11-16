@@ -30,12 +30,11 @@ class InkboxController extends BaseController
 		$select = DB::select('SELECT "Month" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 MONTH) AS `date_as_of`, count(*) AS `count` FROM `users` WHERE `last_login` BETWEEN DATE_SUB(NOW(), INTERVAL 1 MONTH) AND NOW() UNION SELECT "Week" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 WEEK) AS `date_as_of`, count(*) AS `count` FROM `users` WHERE `last_login` BETWEEN DATE_SUB(NOW(), INTERVAL 1 WEEK) AND NOW() UNION SELECT "Day" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 DAY) AS `date_as_of`, count(*) AS `count` FROM `users` WHERE `last_login` BETWEEN DATE_SUB(NOW(), INTERVAL 1 DAY) AND NOW()', array());
 
 		foreach ($select as $key => $value) {
-			array_push($user_data, array(
+			$user_data[$value->interval] = array(
 					'interval' => $value->interval,
 					'date_as_of' => $value->date_as_of,
 					'count' => $value->count
-				)
-			);
+				);
 
 			array_push($interval, $value->interval);
 			array_push($date_as_of, $value->date_as_of);
