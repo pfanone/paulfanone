@@ -86,11 +86,11 @@
 	});
 
 	$.post("/inkbox/tattoodata", function(data) {
-		$("#graph_container").append('<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2"><div id="user_graph" class="graph-div"></div></div>');
+		$("#graph_container").append('<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2"><div id="tattoo_graph" class="graph-div"></div></div>');
 
-		$("#user_graph").append('<canvas id="user_data_chart" width="400" height="400"></canvas>');
+		$("#tattoo_graph").append('<canvas id="tattoo_data_chart" width="400" height="400"></canvas>');
 
-		var ctx = document.getElementById("user_data_chart");
+		var ctx = document.getElementById("tattoo_data_chart");
 		var myChart = new Chart(ctx, {
 			type: 'line',
 			data: {
@@ -134,20 +134,20 @@
 
 		$("#graph_container").append('<div class="col-xs-12 col-sm-3 col-md-2">\
 			<div class="graph-div">\
-				<h4>Users Today</h4>\
-				<h2>' + data['user_data_array']['Day']['count'] + '</h2>\
+				<h4>Tattoos Today</h4>\
+				<h2>' + data['tattoo_data_array']['Day']['count'] + '</h2>\
 			</div>\
 		</div>');
 		$("#graph_container").append('<div class="col-xs-12 col-sm-3 col-md-2">\
 			<div class="graph-div">\
-				<h4>Users This Week</h4>\
-				<h2>' + data['user_data_array']['Week']['count'] + '</h2>\
+				<h4>Tattoos This Week</h4>\
+				<h2>' + data['tattoo_data_array']['Week']['count'] + '</h2>\
 			</div>\
 		</div>');
 		$("#graph_container").append('<div class="col-xs-12 col-sm-3 col-md-2">\
 			<div class="graph-div">\
-				<h4>Users This Month</h4>\
-				<h2>' + data['user_data_array']['Month']['count'] + '</h2>\
+				<h4>Tattoos This Month</h4>\
+				<h2>' + data['tattoo_data_array']['Month']['count'] + '</h2>\
 			</div>\
 		</div>');
 	});
