@@ -8,6 +8,7 @@
 	<div class="col-xs-12" id="user_graph"></div>
 </div>
 
+<input type="hidden" name="_token" value="{{ csrf_token() }}">
 
 <script type="text/javascript">
 	$.post("/inkbox/userdata", function(data) {
