@@ -29,3 +29,46 @@
 	</div>
 </div>
 
+<script type="text/javascript">
+	var ctx = document.getElementById("user_data_chart");
+	var myChart = new Chart(ctx, {
+		type: 'bar',
+		data: {
+			labels: "{{ $interval_array }}",
+			datasets: [{
+				data: "{{ $count_array }}",
+					backgroundColor: [
+						'rgba(54, 162, 235, 0.2)',
+						'rgba(54, 162, 235, 0.2)',
+						'rgba(54, 162, 235, 0.2)'
+					],
+					borderColor: [
+						'rgba(54, 162, 235, 1)',
+						'rgba(54, 162, 235, 1)',
+						'rgba(54, 162, 235, 1)'
+					],
+				borderWidth: 1
+			}]
+		},
+		options: {
+			legend: {
+				display: false
+			},
+			tooltips: {
+				enabled: false
+			},
+			scales: {
+				xAxes: [{
+							gridLines: {
+								display:false
+							}
+						}],
+				yAxes: [{
+							gridLines: {
+								display:false
+							}
+						}]
+			}
+		}
+	});
+</script>
