@@ -5,13 +5,15 @@
 
 <link rel="stylesheet" href="{{ URL::asset('css/inkbox.css') }}" />
 
-<div class="container main-bg">
-	<div class="row">
-		<div class="col-xs-12"><h1>test</h1></div>
-		<div class="col-xs-12 col-sm-6 col-md-3" id="user_graph"></div>
-		<div class="col-xs-12 col-sm-6 col-md-3" id="tattoo_graph"></div>
-		<div class="col-xs-12 col-sm-6 col-md-3" id="tattoo_user_graph"></div>
-	</div>
+<div class="row main-bg">
+	<div class="col-xs-12"><h1>test</h1></div>
+	
+</div>
+
+<div class="row graph-bg">
+	<div class="col-xs-12 col-sm-6 col-md-3" id="user_graph"></div>
+	<div class="col-xs-12 col-sm-6 col-md-3" id="tattoo_graph"></div>
+	<div class="col-xs-12 col-sm-6 col-md-3" id="tattoo_user_graph"></div>
 </div>
 
 <script type="text/javascript" src="{{ URL::asset('js/chart.js') }}"></script>

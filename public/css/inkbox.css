@@ -3,6 +3,10 @@
 	background-position: cover;
 }
 
+.graph-bg {
+	background-color: #493A52;
+}
+
 #user_graph {
    position: relative;
 }
