@@ -12,7 +12,7 @@
 		</div>
 	</div>
 
-	<div class="row">
+	<div class="row" id="user_graph_container">
 		<div class="col-xs-12 col-sm-6 col-md-3" id="user_graph"></div>
 	</div>
 </div>
@@ -21,8 +21,7 @@
 
 <script type="text/javascript">
 	$.post("/inkbox/userdata", function(data) {
-		$("#user_graph").append('<div class="row graph-div">');
-		$("#user_graph").append('<div class="col-xs-12">');
+		$("#user_graph_container").append('<div class="col-xs-12 col-sm-4 col-md-3 graph-div" id="user_graph"></div>');
 
 		$("#user_graph").append('<canvas id="user_data_chart" width="400" height="400"></canvas>');
 
@@ -67,15 +66,11 @@
     			}
 			}
 		});
-		$("#user_graph").append('</div>');
 
-		$("#user_graph").append('<div class="col-xs-12">\
+		$("#user_graph_container").append('<div class="col-xs-12 col-sm-2 graph-div">\
 			<h4>Users Today</h4>\
 			<p>' + data['user_data_array']['Day']['count'] + '</p>\
 		</div>');
-
-		
-		$("#user_graph").append('</div>');
 	});
 </script>
 @endsection
