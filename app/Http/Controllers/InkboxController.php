@@ -16,18 +16,24 @@ class InkboxController extends BaseController
 {
 	public function anyIndex() {
 		$return_array = array();
-		$data_array = array();
-
-		$select = DB::select("SELECT id FROM designs LIMIT 10", array());
-
-		foreach ($select as $key => $value) {
-			array_push($data_array, array(
-					'id' => $value->id
-				));
-		}
-
-		$return_array['designs'] = $data_array;
 
 		return View::make('inkbox.index', $return_array);
+	}
+
+	public function postUserdata() {
+		$return_array = array();
+
+		$select = DB::select('SELECT "day" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 DAY) AS `date_as_of`, count(*) AS `count` FROM `users` WHERE `last_login` BETWEEN DATE_SUB(NOW(), INTERVAL 1 DAY) AND NOW() UNION SELECT "week" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 WEEK) AS `date_as_of`, count(*) AS `count` FROM `users` WHERE `last_login` BETWEEN DATE_SUB(NOW(), INTERVAL 1 WEEK) AND NOW() UNION SELECT "month" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 MONTH) AS `date_as_of`, count(*) AS `count` FROM `users` WHERE `last_login` BETWEEN DATE_SUB(NOW(), INTERVAL 1 MONTH) AND NOW()', array());
+
+		foreach ($select as $key => $value) {
+			array_push($return_array, array(
+					'interval' => $value->interval,
+					'date_as_of' => $value->date_as_of,
+					'count' => $value->count
+				)
+			);
+		}
+
+		return $return_array;
 	}
 }
