@@ -15,15 +15,15 @@
 
 		<div class="col-xs-12 col-sm-4">
 			<div class="graph-div graph-div-half">
-				<h4>Users This Week</h4>
-				<h2>{!! $user_data_array['Week']['count'] !!}</h2>
+				<h4>Users This Day</h4>
+				<h2>{!! $user_data_array['Day']['count'] !!}</h2>
 			</div>
 		</div>
 
 		<div class="col-xs-12 col-sm-4">
 			<div class="graph-div graph-div-half">
-				<h4>Users This Month</h4>
-				<h2>{!! $user_data_array['Month']['count'] !!}</h2>
+				<h4>Users This Week</h4>
+				<h2>{!! $user_data_array['Week']['count'] !!}</h2>
 			</div>
 		</div>
 
