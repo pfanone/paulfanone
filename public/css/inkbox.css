@@ -1,11 +1,18 @@
+
+@font-face {
+    font-family: monserrat;
+    src: url(/fonts/Montserrat-Regular.ttf);
+}
+
 body {
 	background-color: #14181B;
 	color: #fff;
+	font-family: monserrat;
 }
 
 .main-header {
 	background-image: url(/images/bg3.jpg);
-	color: #3f3f3f;
+	color: #000;
 }
 
 .graph-div {
