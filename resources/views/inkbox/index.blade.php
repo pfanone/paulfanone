@@ -48,7 +48,7 @@
 				},
 				tooltips: {
 					enabled: false
-				}
+				},
 				scales: {
 				    xAxes: [{
 				                gridLines: {
