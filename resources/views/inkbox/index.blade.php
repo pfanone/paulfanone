@@ -12,18 +12,19 @@
 		</div>
 	</div>
 
-	<div class="row" id="graph_container"></div>
+	<div class="row" id="user_graph_container"></div>
+	<div class="row" id="tattoo_graph_container"></div>
 </div>
 
 <script type="text/javascript" src="{{ URL::asset('js/chart.js') }}"></script>
 
 <script type="text/javascript">
 	$.post("/inkbox/userdata", function(data) {
-		$("#graph_container").append(data);
+		$("#user_graph_container").append(data);
 	});
 
 	$.post("/inkbox/tattoodata", function(data) {
-		$("#graph_container").append(data);
+		$("#tattoo_graph_container").append(data);
 	});
 </script>
 @endsection
