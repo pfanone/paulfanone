@@ -54,12 +54,12 @@ body {
 }
 
 .tattoo-img {
-	width: auto;
-	height: 100%;
+	width: 100%;
+	height: auto;
 }
 
 .tattoo-header {
-	
+	min-height: 26px;
 }
 
 .fa-caret-up { color: #2ecc71; }
