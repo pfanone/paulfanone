@@ -32,3 +32,6 @@ body {
 .graph-div-half {
 	min-height: 141px;
 }
+
+.fa-caret-up { color: #2ecc71; }
+.fa-caret-down { color: #c0392b; }
