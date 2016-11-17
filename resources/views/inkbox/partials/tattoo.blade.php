@@ -4,7 +4,7 @@
 		<div class="tattoo-div">
 			<div class="row">
 				<div class="col-xs-12">
-					<h2>{!! $tattoo['design_name'] !!}</h2>
+					<h3 class="tattoo-header">{!! $tattoo['design_name'] !!}</h3>
 				</div>
 				<div class="col-xs-12">
 					<div class=" tattoo-img-container">
