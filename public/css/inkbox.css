@@ -29,6 +29,7 @@ body {
 .graph-numbers {
 	position: absolute;
 	bottom: 5px;
+	width: 90%;
 }
 
 .graph-div-full {min-height: 292px; }
