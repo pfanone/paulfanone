@@ -132,6 +132,7 @@ class InkboxController extends BaseController
 		$return_array['tattoo_data_array'] = $tattoo_data;
 
 		$user_tattoo_data = array();
+		$count_array = array();
 
 		foreach ($user_data as $key => $value) {
 			$user_tattoo_value = 0;
@@ -139,12 +140,15 @@ class InkboxController extends BaseController
 				$user_tattoo_value = intval($tattoo_data[$key]['count'] / $user_data[$key]['count']);
 			}
 			$user_tattoo_data[$key] = $user_tattoo_value;
+
+			if ($key != "All") array_push($user_count, $user_tattoo_value);
 		}
 
 		$return_array['user_tattoo_data_array'] = $user_tattoo_data;
 
 		$return_array['interval_array'] = $user_interval;
 		$return_array['date_as_of_array'] = $user_date_as_of;
+		$return_array['count_array'] = $count_array;
 		
 		return View::make("inkbox.partials.tattoo_graph", $return_array)->render();
 	}
