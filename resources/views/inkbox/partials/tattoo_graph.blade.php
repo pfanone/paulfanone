@@ -1,6 +1,6 @@
 <div class="col-xs-12">
 	<div class="row">
-		<div class="col-xs-12 col-sm-4 col-md-4">
+		<div class="col-xs-12 col-sm-4">
 			<div id="tattoo_graph" class="graph-div graph-div-full">
 				<canvas id="tattoo_data_chart" width="400" height="400"></canvas>
 			</div>
