@@ -26,12 +26,8 @@ body {
 	position: relative;
 }
 
-.graph-btn.active {
-	background-color: #1D2752;
-}
-.graph-btn:hover {
-	background-color: #34495e;
-}
+.graph-btn.active { background-color: #34495e; }
+.graph-btn:hover { background-color: #1D2752; }
 
 .graph-numbers {
 	position: absolute;
