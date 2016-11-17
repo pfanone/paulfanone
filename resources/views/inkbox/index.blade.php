@@ -46,8 +46,8 @@
 <script type="text/javascript" src="{{ URL::asset('js/chart.js') }}"></script>
 
 <script type="text/javascript">
-	//loadGraphs();
-	loadTattoos();
+	loadGraphs();
+	// loadTattoos();
 
 	$("#graph_btn").on("click", function() {
 		loadGraphs();
