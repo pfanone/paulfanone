@@ -216,7 +216,9 @@ class InkboxController extends BaseController
 						'design_name' => $value->design_name,
 						'preview_image' => $value->preview_image,
 						'width' => $value->width,
-						'height' => $value->height
+						'height' => $value->height,
+						'date_created' => $value->date_created,
+						'date_updated' => $value->date_updated
 					)
 				);
 		}
