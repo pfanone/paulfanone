@@ -39,11 +39,11 @@
 <script type="text/javascript">
 	var ctx = document.getElementById("user_data_chart");
 	var myChart = new Chart(ctx, {
-		label: "User Logins",
 		type: 'bar',
 		data: {
 			labels: {!! json_encode($interval_array) !!},
 			datasets: [{
+				label: "User Logins",
 				data: {!! json_encode($count_array) !!},
 					backgroundColor: [
 						'rgba(54, 162, 235, 0.2)',
@@ -59,6 +59,12 @@
 			}]
 		},
 		options: {
+			legend: {
+				display: false
+			},
+			tooltips: {
+				enabled: false
+			},
 			scales: {
 				xAxes: [{
 							gridLines: {
