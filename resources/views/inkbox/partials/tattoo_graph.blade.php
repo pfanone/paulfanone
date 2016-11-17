@@ -48,6 +48,7 @@
 			}]
 		},
 		options: {
+			maintainAspectRatio: false,
 			title: {
 				display: true,
 				text: 'Tattoo Designs by Date'
