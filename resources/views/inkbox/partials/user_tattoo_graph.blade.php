@@ -9,7 +9,7 @@
 		<div class="col-xs-12 col-sm-4">
 			<div class="graph-div graph-div-half">
 				<h4>Tattoos Per User Average</h4>
-				<h2>{!! $tattoo_user !!}</h2>
+				<h2 class="graph-numbers">{!! $tattoo_user !!}</h2>
 			</div>
 		</div>
 	</div>

@@ -9,28 +9,28 @@
 		<div class="col-xs-12 col-sm-4 col-lg-5">
 			<div class="graph-div graph-div-half">
 				<h4>Tattoos Created All Time</h4>
-				<h2>{!! $tattoo_data_array['All']['count'] !!}</h2>
+				<h2 class="graph-numbers">{!! $tattoo_data_array['All']['count'] !!}</h2>
 			</div>
 		</div>
 
 		<div class="col-xs-12 col-sm-4 col-lg-5">
 			<div class="graph-div graph-div-half">
 				<h4>Tattoos Created Today</h4>
-				<h2>{!! $tattoo_data_array['Day']['count'] !!}<span class="pull-right">{!! $count_difference['Day'] !!}</span></h2>
+				<h2 class="graph-numbers">{!! $tattoo_data_array['Day']['count'] !!}<span class="pull-right">{!! $count_difference['Day'] !!}</span></h2>
 			</div>
 		</div>
 
 		<div class="col-xs-12 col-sm-4 col-lg-5">
 			<div class="graph-div graph-div-half">
 				<h4>Tattoos Created This Week</h4>
-				<h2>{!! $tattoo_data_array['Week']['count'] !!}<span class="pull-right">{!! $count_difference['Week'] !!}</span></h2>
+				<h2 class="graph-numbers">{!! $tattoo_data_array['Week']['count'] !!}<span class="pull-right">{!! $count_difference['Week'] !!}</span></h2>
 			</div>
 		</div>
 
 		<div class="col-xs-12 col-sm-4 col-lg-5">
 			<div class="graph-div graph-div-half">
 				<h4>Tattoos Created This Month</h4>
-				<h2>{!! $tattoo_data_array['Month']['count'] !!}<span class="pull-right">{!! $count_difference['Month'] !!}</span></h2>
+				<h2 class="graph-numbers">{!! $tattoo_data_array['Month']['count'] !!}<span class="pull-right">{!! $count_difference['Month'] !!}</span></h2>
 			</div>
 		</div>
 	</div>
