@@ -40,7 +40,7 @@ body {
 
 .graph-div-full { 
 	min-height: 292px;
-	max-width: 270px;
+	/*max-width: 270px;*/
 }
 .graph-div-half { min-height: 141px; }
 
