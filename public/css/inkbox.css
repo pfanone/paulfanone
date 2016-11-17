@@ -48,11 +48,14 @@ body {
 
 .tattoo-img-container {
 	background-color: #fff;
+	width:100%;
+	min-height: 240px;
+	height: 240px;
 }
 
 .tattoo-img {
-	width: 100%;
-	height: auto;
+	width: auto;
+	height: 100%;
 }
 
 .fa-caret-up { color: #2ecc71; }
