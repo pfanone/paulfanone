@@ -32,7 +32,7 @@ class InkboxController extends BaseController
 		$date_as_of_past = array();
 		$count_past = array();
 
-		$count_differnce = array();
+		$count_difference = array();
 
 		$select = DB::select('SELECT 0 AS `type`, "All" AS `interval`, "" `date_as_of`, count(*) AS `count` FROM `users`'
 			. ' UNION'
@@ -49,7 +49,7 @@ class InkboxController extends BaseController
 			. ' SELECT 2 AS `type`, "Day" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 DAY) AS `date_as_of`, count(*) AS `count` FROM `users` WHERE `last_login` BETWEEN DATE_SUB(NOW(), INTERVAL 2 DAY) AND DATE_SUB(NOW(), INTERVAL 1 DAY)', array());
 
 		foreach ($select as $key => $value) {
-			if ($value->interval != 2) {
+			if ($value->type != 2) {
 				$user_data[$value->interval] = array(
 					'type' => $value->type,
 					'interval' => $value->interval,
@@ -58,12 +58,12 @@ class InkboxController extends BaseController
 				);
 			}
 
-			if ($value->interval == 1) {
+			if ($value->type == 1) {
 				array_push($interval_current, $value->interval);
 				array_push($date_as_of_current, $value->date_as_of);
 				array_push($count_current, $value->count);
 			}
-			else if ($value->interval == 2) {
+			else if ($value->type == 2) {
 				array_push($interval_past, $value->interval);
 				array_push($date_as_of_past, $value->date_as_of);
 				array_push($count_past, $value->count);
@@ -71,14 +71,14 @@ class InkboxController extends BaseController
 		}
 
 		foreach ($count_current as $key => $value) {
-			$count_differnce[$key] = $count_current[$key] - $count_past[$key];
+			$count_difference[$key] = $count_current[$key] - $count_past[$key];
 		}
 
 		$return_array['user_data_array'] = $user_data;
 		$return_array['interval_array'] = $interval;
 		$return_array['date_as_of_array'] = $date_as_of;
 		$return_array['count_array'] = $count;
-		$return_array['count_differnce'] = $count_differnce;
+		$return_array['count_difference'] = $count_difference;
 
 		return View::make("inkbox.partials.user_graph", $return_array)->render();
 	}
