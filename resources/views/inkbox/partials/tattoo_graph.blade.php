@@ -64,6 +64,9 @@
 				yAxes: [{
 							gridLines: {
 								display:false
+							},
+							ticks: {
+								beginAtZero: true
 							}
 						}]
 			}

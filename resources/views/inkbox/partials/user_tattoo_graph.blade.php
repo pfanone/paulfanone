@@ -51,6 +51,9 @@
 							scaleLabel: {
 								display: true,
 								labelString: '# of Users'
+							},
+							ticks: {
+								beginAtZero: true
 							}
 						}]
 			}
