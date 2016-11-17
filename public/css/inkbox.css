@@ -37,7 +37,10 @@ body {
 	width: 90%;
 }
 
-.graph-div-full {min-height: 292px; }
+.graph-div-full { 
+	min-height: 292px;
+	max-width: 270px;
+}
 .graph-div-half { min-height: 141px; }
 
 .fa-caret-up { color: #2ecc71; }
