@@ -12,7 +12,7 @@
 				<div class="col-xs-12">
 					<div class="row">
 						<div class="col-xs-12">
-							<dl class="marginT5">
+							<dl class="marginT10">
 								<dt>Size:</dt>
 								<dd>{!! $tattoo['width'] !!}&nbsp;<i class="fa fa-times" aria-hidden="true"></i>&nbsp;{!! $tattoo['height'] !!}</dd>
 								<dt>Status:</dt>
