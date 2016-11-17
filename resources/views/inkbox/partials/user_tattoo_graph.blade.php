@@ -1,12 +1,12 @@
 <div class="col-xs-12">
 	<div class="row">
-		<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
+		<div class="col-xs-12 col-sm-6">
 			<div id="user_tattoo_graph" class="graph-div graph-div-full">
 				<canvas id="user_tattoo_data_chart" width="400" height="400"></canvas>
 			</div>
 		</div>
 
-		<div class="col-xs-12 col-sm-4 col-lg-5">
+		<div class="col-xs-12 col-sm-4">
 			<div class="graph-div graph-div-half">
 				<h4>Tattoos Per User Average</h4>
 				<h2>{!! $tattoo_user !!}</h2>

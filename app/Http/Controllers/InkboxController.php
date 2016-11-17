@@ -109,8 +109,8 @@ class InkboxController extends BaseController
 		$select = DB::select('SELECT `count` AS `design_count`, COUNT(`count`) AS `user_count` FROM (SELECT count(user_id) AS count FROM designs GROUP BY user_id) AS tmp GROUP BY `count`', array());
 
 		foreach ($select as $key => $value) {
-			array_push($label_array, $value->user_count);
-			array_push($count_array, $value->design_count);
+			array_push($label_array, $value->design_count);
+			array_push($count_array, $value->user_count);
 		}
 
 		$return_array['label_array'] = $label_array;
