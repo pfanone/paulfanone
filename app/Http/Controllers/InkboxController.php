@@ -209,14 +209,14 @@ class InkboxController extends BaseController
 
 		foreach ($select as $key => $value) {
 			array_push($tattoo_array, array(
-						`id` => $value->id,
-						`user_id` => $value->user_id,
-						`save_count` => $value->save_count,
-						`deleted` => $value->deleted,
-						`design_name` => $value->design_name,
-						`preview_image` => $value->preview_image,
-						`width` => $value->width,
-						`height` => $value->height
+						'id' => $value->id,
+						'user_id' => $value->user_id,
+						'save_count' => $value->save_count,
+						'deleted' => $value->deleted,
+						'design_name' => $value->design_name,
+						'preview_image' => $value->preview_image,
+						'width' => $value->width,
+						'height' => $value->height
 					)
 				);
 		}
