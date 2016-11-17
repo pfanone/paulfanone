@@ -1,7 +1,7 @@
 <div class="col-xs-12">
 	<div class="row">
 		<div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
-			<div id="user_tattoo_graph" class="graph-div graph-div-full">
+			<div id="user_tattoo_graph" class="graph-div" style="min-height: 292px;">
 				<canvas id="user_tattoo_data_chart" width="400" height="300"></canvas>
 			</div>
 		</div>
