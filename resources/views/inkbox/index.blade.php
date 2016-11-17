@@ -12,8 +12,14 @@
 		</div>
 	</div>
 
-	<div class="row" id="user_graph_container"></div>
-	<div class="row" id="tattoo_graph_container"></div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-3">
+			<div class="row" id="user_graph_container"></div>
+		</div>
+		<div class="col-xs-12 col-sm-3">
+			<div class="row" id="tattoo_graph_container"></div>
+		</div>
+	</div>
 </div>
 
 <script type="text/javascript" src="{{ URL::asset('js/chart.js') }}"></script>
