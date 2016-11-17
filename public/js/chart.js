@@ -6401,7 +6401,7 @@ module.exports = function() {
 				animationDuration: 400
 			},
 			onClick: null,
-			defaultColor: 'rgba(0,0,0,0.1)',
+			defaultColor: 'rgba(54, 162, 235, 0.2)',
 			defaultFontColor: '#fff',
 			defaultFontFamily: "'monserrat', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
 			defaultFontSize: 12,
@@ -9504,7 +9504,7 @@ module.exports = function(Chart) {
 
 	globalOpts.elements.arc = {
 		backgroundColor: globalOpts.defaultColor,
-		borderColor: '#fff',
+		borderColor: 'rgba(54, 162, 235, 1)',
 		borderWidth: 2
 	};
 
