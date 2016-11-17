@@ -38,11 +38,22 @@
 <script type="text/javascript" src="{{ URL::asset('js/chart.js') }}"></script>
 
 <script type="text/javascript">
+	loadGraphs();
+
 	$("#graph_btn").on("click", function() {
+		loadGraphs();
+	});
+
+	$("#tattoo_btn").on("click", function() {
+		$("#tattoo_section").show();
+		$("#graphs_section").hide();
+	});
+
+	function loadGraphs() {
 		$("#user_graph_container").empty();
 		$("#tattoo_graph_container").empty();
 		$("#user_tattoo_graph_container").empty();
-		
+
 		$.post("/inkbox/userdata", function(data) {
 			$("#user_graph_container").html(data);
 		});
@@ -57,11 +68,6 @@
 		
 		$("#graphs_section").show();
 		$("#tattoo_section").hide();
-	});
-
-	$("#tattoo_btn").on("click", function() {
-		$("#tattoo_section").show();
-		$("#graphs_section").hide();
-	});
+	}
 </script>
 @endsection
