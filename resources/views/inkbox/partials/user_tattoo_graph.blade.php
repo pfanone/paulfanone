@@ -8,7 +8,7 @@
 
 		<div class="col-xs-12 col-sm-4 col-lg-5">
 			<div class="graph-div graph-div-half">
-				<h4>Tattoos Per User</h4>
+				<h4>Tattoos Per User Average</h4>
 				<h2>{!! $tattoo_user !!}</h2>
 			</div>
 		</div>
@@ -22,7 +22,7 @@
 		data: {
 			labels: {!! json_encode($label_array) !!},
 			datasets: [{
-				label: "Tattoos Per User",
+				label: "# of Tattoos Per User",
 				data: {!! json_encode($count_array) !!},
 				borderWidth: 1
 			}]
