@@ -11,10 +11,10 @@
 				</div>
 				<div class="col-xs-12">
 					<div class="row">
-						<div class="col-xs-12 col-sm-6">
+						<div class="col-xs-12 col-md-6">
 							<p>{!! $tattoo['width'] !!}&nbsp;<i class="fa fa-times" aria-hidden="true"></i>&nbsp;{!! $tattoo['height'] !!}</p>
 						</div>
-						<div class="col-xs-12 col-sm-6">
+						<div class="col-xs-12 col-md-6">
 							<p>Status: @if ($tattoo['deleted'] == 1)
 							Deleted
 							@else
@@ -22,10 +22,10 @@
 							@endif
 							</p>
 						</div>
-						<div class="col-xs-12 col-sm-6">
+						<div class="col-xs-12 col-md-6">
 							<p>Date Created: {!! $tattoo['date_created'] !!}</p>
 						</div>
-						<div class="col-xs-12 col-sm-6">
+						<div class="col-xs-12 col-md-6">
 							<p>Last Updated: {!! $tattoo['date_updated'] !!}</p>
 						</div>
 					</div>
