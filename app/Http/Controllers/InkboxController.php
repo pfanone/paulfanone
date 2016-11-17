@@ -23,30 +23,62 @@ class InkboxController extends BaseController
 	public function postUserdata() {
 		$return_array = array();
 		$user_data = array();
-		$interval = array();
-		$date_as_of = array();
-		$count = array();
 
-		$select = DB::select('SELECT "All" AS `interval`, "" `date_as_of`, count(*) AS `count` FROM `users` UNION SELECT "Month" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 MONTH) AS `date_as_of`, count(*) AS `count` FROM `users` WHERE `last_login` BETWEEN DATE_SUB(NOW(), INTERVAL 1 MONTH) AND NOW() UNION SELECT "Week" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 WEEK) AS `date_as_of`, count(*) AS `count` FROM `users` WHERE `last_login` BETWEEN DATE_SUB(NOW(), INTERVAL 1 WEEK) AND NOW() UNION SELECT "Day" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 DAY) AS `date_as_of`, count(*) AS `count` FROM `users` WHERE `last_login` BETWEEN DATE_SUB(NOW(), INTERVAL 1 DAY) AND NOW()', array());
+		$interval_current = array();
+		$date_as_of_current = array();
+		$count_current = array();
+
+		$interval_past = array();
+		$date_as_of_past = array();
+		$count_past = array();
+
+		$count_differnce = array();
+
+		$select = DB::select('SELECT 0 AS `type`, "All" AS `interval`, "" `date_as_of`, count(*) AS `count` FROM `users`'
+			. ' UNION'
+			. ' SELECT 1 AS `type`, "Month" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 MONTH) AS `date_as_of`, count(*) AS `count` FROM `users` WHERE `last_login` BETWEEN DATE_SUB(NOW(), INTERVAL 1 MONTH) AND NOW()'
+			. ' UNION'
+			. ' SELECT 1 AS `type`, "Week" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 WEEK) AS `date_as_of`, count(*) AS `count` FROM `users` WHERE `last_login` BETWEEN DATE_SUB(NOW(), INTERVAL 1 WEEK) AND NOW()'
+			. ' UNION'
+			. ' SELECT 1 AS `type`, "Day" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 DAY) AS `date_as_of`, count(*) AS `count` FROM `users` WHERE `last_login` BETWEEN DATE_SUB(NOW(), INTERVAL 1 DAY) AND NOW()'
+			. ' UNION'
+			. ' SELECT 2 AS `type`, "Month" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 MONTH) AS `date_as_of`, count(*) AS `count` FROM `users` WHERE `last_login` BETWEEN DATE_SUB(NOW(), INTERVAL 2 MONTH) AND DATE_SUB(NOW(), INTERVAL 1 MONTH)'
+			. ' UNION'
+			. ' SELECT 2 AS `type`, "Week" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 WEEK) AS `date_as_of`, count(*) AS `count` FROM `users` WHERE `last_login` BETWEEN DATE_SUB(NOW(), INTERVAL 2 WEEK) AND DATE_SUB(NOW(), INTERVAL 1 WEEK)'
+			. ' UNION'
+			. ' SELECT 2 AS `type`, "Day" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 DAY) AS `date_as_of`, count(*) AS `count` FROM `users` WHERE `last_login` BETWEEN DATE_SUB(NOW(), INTERVAL 2 DAY) AND DATE_SUB(NOW(), INTERVAL 1 DAY)', array());
 
 		foreach ($select as $key => $value) {
-			$user_data[$value->interval] = array(
+			if ($value->interval != 2) {
+				$user_data[$value->interval] = array(
+					'type' => $value->type,
 					'interval' => $value->interval,
 					'date_as_of' => $value->date_as_of,
 					'count' => $value->count
 				);
-
-			if ($value->interval != "All") {
-				array_push($interval, $value->interval);
-				array_push($date_as_of, $value->date_as_of);
-				array_push($count, $value->count);
 			}
+
+			if ($value->interval == 1) {
+				array_push($interval_current, $value->interval);
+				array_push($date_as_of_current, $value->date_as_of);
+				array_push($count_current, $value->count);
+			}
+			else if ($value->interval == 2) {
+				array_push($interval_past, $value->interval);
+				array_push($date_as_of_past, $value->date_as_of);
+				array_push($count_past, $value->count);
+			}
+		}
+
+		foreach ($count_current as $key => $value) {
+			$count_differnce[$key] = $count_current[$key] - $count_past[$key];
 		}
 
 		$return_array['user_data_array'] = $user_data;
 		$return_array['interval_array'] = $interval;
 		$return_array['date_as_of_array'] = $date_as_of;
 		$return_array['count_array'] = $count;
+		$return_array['count_differnce'] = $count_differnce;
 
 		return View::make("inkbox.partials.user_graph", $return_array)->render();
 	}

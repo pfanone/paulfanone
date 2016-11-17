@@ -17,6 +17,7 @@
 			<div class="graph-div graph-div-half">
 				<h4>Users Today</h4>
 				<h2>{!! $user_data_array['Day']['count'] !!}</h2>
+				<h2>{!! $count_difference['Day'] !!}</h2>
 			</div>
 		</div>
 
@@ -24,6 +25,7 @@
 			<div class="graph-div graph-div-half">
 				<h4>Users This Week</h4>
 				<h2>{!! $user_data_array['Week']['count'] !!}</h2>
+				<h2>{!! $count_difference['Week'] !!}</h2>
 			</div>
 		</div>
 
@@ -31,6 +33,7 @@
 			<div class="graph-div graph-div-half">
 				<h4>Users This Month</h4>
 				<h2>{!! $user_data_array['Month']['count'] !!}</h2>
+				<h2>{!! $count_difference['Month'] !!}</h2>
 			</div>
 		</div>
 	</div>
