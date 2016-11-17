@@ -8,29 +8,8 @@
 
 		<div class="col-xs-12 col-sm-4 col-lg-5">
 			<div class="graph-div graph-div-half">
-				<h4>Users All Time</h4>
-				<h2>{!! $user_tattoo_data_array['All'] !!}</h2>
-			</div>
-		</div>
-
-		<div class="col-xs-12 col-sm-4 col-lg-5">
-			<div class="graph-div graph-div-half">
-				<h4>Users Today</h4>
-				<h2>{!! $user_tattoo_data_array['Day'] !!}</h2>
-			</div>
-		</div>
-
-		<div class="col-xs-12 col-sm-4 col-lg-5">
-			<div class="graph-div graph-div-half">
-				<h4>Users This Week</h4>
-				<h2>{!! $user_tattoo_data_array['Week'] !!}</h2>
-			</div>
-		</div>
-
-		<div class="col-xs-12 col-sm-4 col-lg-5">
-			<div class="graph-div graph-div-half">
-				<h4>Users This Month</h4>
-				<h2>{!! $user_tattoo_data_array['Month'] !!}</h2>
+				<h4>Tattoos Per User</h4>
+				<h2>{!! $tattoo_user !!}</h2>
 			</div>
 		</div>
 	</div>
@@ -41,20 +20,10 @@
 	var myChart = new Chart(ctx, {
 		type: 'bar',
 		data: {
-			labels: {!! json_encode($interval_array) !!},
+			labels: {!! json_encode($label_array) !!},
 			datasets: [{
-				label: "Tattoos Per User by Date",
+				label: "Tattoos Per User",
 				data: {!! json_encode($count_array) !!},
-					backgroundColor: [
-						'rgba(54, 162, 235, 0.2)',
-						'rgba(54, 162, 235, 0.2)',
-						'rgba(54, 162, 235, 0.2)'
-					],
-					borderColor: [
-						'rgba(54, 162, 235, 1)',
-						'rgba(54, 162, 235, 1)',
-						'rgba(54, 162, 235, 1)'
-					],
 				borderWidth: 1
 			}]
 		},

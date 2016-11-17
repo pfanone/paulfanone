@@ -85,71 +85,37 @@ class InkboxController extends BaseController
 	public function postUsertattoodata() {
 		$return_array = array();
 
-		$user_data = array();
-		$user_interval = array();
-		$user_date_as_of = array();
-		$user_count = array();
+		$user_count = 0;
+		$tattoo_count = 0;
 
-		$user_select = DB::select('SELECT "All" AS `interval`, "" `date_as_of`, count(*) AS `count` FROM `users` UNION SELECT "Month" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 MONTH) AS `date_as_of`, count(*) AS `count` FROM `users` WHERE `last_login` BETWEEN DATE_SUB(NOW(), INTERVAL 1 MONTH) AND NOW() UNION SELECT "Week" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 WEEK) AS `date_as_of`, count(*) AS `count` FROM `users` WHERE `last_login` BETWEEN DATE_SUB(NOW(), INTERVAL 1 WEEK) AND NOW() UNION SELECT "Day" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 DAY) AS `date_as_of`, count(*) AS `count` FROM `users` WHERE `last_login` BETWEEN DATE_SUB(NOW(), INTERVAL 1 DAY) AND NOW()', array());
+		$select = DB::select('SELECT "user" AS `type`, count(DISTINCT `id`) AS `count` FROM `users` UNION SELECT "tattoo" AS `type`, count(DISTINCT `id`) AS `count` FROM `designs`', array());
 
-		foreach ($user_select as $key => $value) {
-			$user_data[$value->interval] = array(
-					'interval' => $value->interval,
-					'date_as_of' => $value->date_as_of,
-					'count' => $value->count
-				);
-
-			if ($value->interval != "All") {
-				array_push($user_interval, $value->interval);
-				array_push($user_date_as_of, $value->date_as_of);
-				array_push($user_count, $value->count);
-			}
+		foreach ($select as $key => $value) {
+			if ($value->type == "user") $user_count = intval($value->count);
+			else if ($value->type == "tattoo") $tattoo_count = intval($value->count);
 		}
 
-		$return_array['user_data_array'] = $user_data;
+		$tattoo_user = 0;
 
-		$tattoo_data = array();
-		$tattoo_interval = array();
-		$tattoo_date_as_of = array();
-		$tattoo_count = array();
+		if ($user_count > 0) $tattoo_user = intval($tattoo_count / $user_count);
 
-		$tattoo_select = DB::select('SELECT "All" AS `interval`, "" AS `date_as_of`, count(*) AS `count` FROM `designs` UNION SELECT "Month" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 MONTH) AS `date_as_of`, count(*) AS `count` FROM `designs` WHERE `date_created` BETWEEN DATE_SUB(NOW(), INTERVAL 1 MONTH) AND NOW() UNION SELECT "Week" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 WEEK) AS `date_as_of`, count(*) AS `count` FROM `designs` WHERE `date_created` BETWEEN DATE_SUB(NOW(), INTERVAL 1 WEEK) AND NOW() UNION SELECT "Day" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 DAY) AS `date_as_of`, count(*) AS `count` FROM `designs` WHERE `date_created` BETWEEN DATE_SUB(NOW(), INTERVAL 1 DAY) AND NOW()', array());
+		$return_array['user_count'] = $user_count;
+		$return_array['tattoo_count'] = $tattoo_count;
+		$return_array['tattoo_user'] = $tattoo_user;
 
-		foreach ($tattoo_select as $key => $value) {
-			$tattoo_data[$value->interval] = array(
-					'interval' => $value->interval,
-					'date_as_of' => $value->date_as_of,
-					'count' => $value->count
-				);
-
-			if ($value->interval != "All") {
-				array_push($tattoo_interval, $value->interval);
-				array_push($tattoo_date_as_of, $value->date_as_of);
-				array_push($tattoo_count, $value->count);
-			}
-		}
-
-		$return_array['tattoo_data_array'] = $tattoo_data;
-
-		$user_tattoo_data = array();
+		$label_array = array();
 		$count_array = array();
 
-		foreach ($user_data as $key => $value) {
-			$user_tattoo_value = 0;
-			if ($user_data[$key]['count'] > 0) {
-				$user_tattoo_value = intval($tattoo_data[$key]['count'] / $user_data[$key]['count']);
-			}
-			$user_tattoo_data[$key] = $user_tattoo_value;
+		$select = DB::select('SELECT `count` AS `design_count`, COUNT(`count`) AS `user_count` FROM (SELECT count(user_id) AS count FROM designs GROUP BY user_id) AS tmp GROUP BY `count`', array());
 
-			if ($key != "All") array_push($count_array, $user_tattoo_value);
+		foreach ($select as $key => $value) {
+			array_push($label_array, $value->user_count);
+			array_push($count_array, $value->design_count);
 		}
 
-		$return_array['user_tattoo_data_array'] = $user_tattoo_data;
-
-		$return_array['interval_array'] = $user_interval;
-		$return_array['date_as_of_array'] = $user_date_as_of;
+		$return_array['label_array'] = $label_array;
 		$return_array['count_array'] = $count_array;
-		
+
 		return View::make("inkbox.partials.user_tattoo_graph", $return_array)->render();
 	}
 }
