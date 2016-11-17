@@ -27,6 +27,7 @@
 			}]
 		},
 		options: {
+			maintainAspectRatio: false,
 			title: {
 				display: true,
 				text: 'Tattoos Created By Users'
