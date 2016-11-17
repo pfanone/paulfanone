@@ -71,7 +71,7 @@ class InkboxController extends BaseController
 		}
 
 		foreach ($count_current as $key => $value) {
-			$count_difference[$key] = $count_current[$key] - $count_past[$key];
+			$count_difference[$interval_current[$key]] = $count_current[$key] - $count_past[$key];
 		}
 
 		$return_array['user_data_array'] = $user_data;
