@@ -208,15 +208,16 @@ class InkboxController extends BaseController
 		$select = DB::select('SELECT `id`, `user_id`, `save_count`, `deleted`, `design_name`, `preview_image`, `width`, `height` FROM `designs`', array());
 
 		foreach ($select as $key => $value) {
-			$tattoos[$value->id] = array(
-					`id` => $value->id,
-					`user_id` => $value->user_id,
-					`save_count` => $value->save_count,
-					`deleted` => $value->deleted,
-					`design_name` => $value->design_name,
-					`preview_image` => $value->preview_image,
-					`width` => $value->width,
-					`height` => $value->height
+			array_push($tattoos, array(
+						`id` => $value->id,
+						`user_id` => $value->user_id,
+						`save_count` => $value->save_count,
+						`deleted` => $value->deleted,
+						`design_name` => $value->design_name,
+						`preview_image` => $value->preview_image,
+						`width` => $value->width,
+						`height` => $value->height
+					)
 				);
 		}
 
