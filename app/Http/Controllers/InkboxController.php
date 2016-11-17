@@ -150,6 +150,6 @@ class InkboxController extends BaseController
 		$return_array['date_as_of_array'] = $user_date_as_of;
 		$return_array['count_array'] = $count_array;
 		
-		return View::make("inkbox.partials.tattoo_graph", $return_array)->render();
+		return View::make("inkbox.partials.user_tattoo_graph", $return_array)->render();
 	}
 }
