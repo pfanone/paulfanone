@@ -43,8 +43,8 @@
 		data: {
 			labels: {!! json_encode($interval_array) !!},
 			datasets: [{
-				label: "User Logins by Date",
-				data: {!! json_encode($count_array) !!},
+				label: "Tattoos Per User by Date",
+				data: {!! json_encode($user_tattoo_data_array) !!},
 					backgroundColor: [
 						'rgba(54, 162, 235, 0.2)',
 						'rgba(54, 162, 235, 0.2)',
