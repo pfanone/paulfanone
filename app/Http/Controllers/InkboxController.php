@@ -106,7 +106,7 @@ class InkboxController extends BaseController
 
 		$count_difference = array();
 
-		$select = DB::select('SELECT 0 AS `type`, "All" AS `interval`, "" `date_as_of`, count(*) AS `count` FROM `users`'
+		$select = DB::select('SELECT 0 AS `type`, "All" AS `interval`, "" `date_as_of`, count(*) AS `count` FROM `designs`'
 			. ' UNION'
 			. ' SELECT 1 AS `type`, "Month" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 MONTH) AS `date_as_of`, count(*) AS `count` FROM `designs` WHERE `date_created` BETWEEN DATE_SUB(NOW(), INTERVAL 1 MONTH) AND NOW()'
 			. ' UNION'
