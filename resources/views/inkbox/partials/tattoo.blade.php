@@ -11,18 +11,16 @@
 				</div>
 				<div class="col-xs-12">
 					<div class="row">
-						<div class="col-xs-12 col-sm-4">
-							<p>Size:<br>{!! $tattoo['width'] !!}&nbsp;<i class="fa fa-times" aria-hidden="true"></i>&nbsp;{!! $tattoo['height'] !!}</p>
-						</div>
-						<div class="col-xs-12 col-sm-8">
-							<p>Status:<br>@if ($tattoo['deleted'] == 1)
+						<div class="col-xs-12">
+							<dl>
+								<dt>Size:</dt>
+								<dd>{!! $tattoo['width'] !!}&nbsp;<i class="fa fa-times" aria-hidden="true"></i>&nbsp;{!! $tattoo['height'] !!}</dd>
+								<dt>Status:</dt>
+								<dd>@if ($tattoo['deleted'] == 1)
 									Deleted
 									@else
 									Active
-									@endif</p>
-						</div>
-						<div class="col-xs-12">
-							<dl>
+									@endif</dd>
 								<dt>Date Created:</dt>
 								<dd>{!! $tattoo['date_created'] !!}</dd>
 								<dt>Last Updated:</dt>
