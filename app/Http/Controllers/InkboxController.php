@@ -205,7 +205,7 @@ class InkboxController extends BaseController
 		$return_array = array();
 		$tattoo_array = array();
 
-		$select = DB::select('SELECT `id`, `user_id`, `save_count`, `deleted`, `design_name`, `preview_image`, `width`, `height`, `date_created`, `date_updated` FROM `designs` WHERE `deleted` = 0', array());
+		$select = DB::select('SELECT `id`, `user_id`, `save_count`, `deleted`, `design_name`, `preview_image`, `width`, `height`, `date_created`, `date_updated` FROM `designs` WHERE `deleted` = 0 ORDER BY `date_updated` DESC, `date_created` DESC', array());
 
 		foreach ($select as $key => $value) {
 			array_push($tattoo_array, array(
