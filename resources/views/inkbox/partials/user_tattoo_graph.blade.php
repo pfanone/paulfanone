@@ -22,7 +22,7 @@
 		data: {
 			labels: {!! json_encode($label_array) !!},
 			datasets: [{
-				label: "Tattoos Created By User",
+				label: "Tattoos Created By Users",
 				data: {!! json_encode($count_array) !!},
 				borderWidth: 1
 			}]
