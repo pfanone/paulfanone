@@ -44,7 +44,7 @@
 							},
 							scaleLabel: {
 								display: true,
-								labelString: 'Users with that many'
+								labelString: '# of Users'
 							}
 						}]
 			}

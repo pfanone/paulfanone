@@ -39,6 +39,7 @@
 	</div>
 
 	<div id="tattoo_section" class="row" style="display:none;">
+		<div id="tattoo_container" class="col-xs-12"></div>
 	</div>
 </div>
 
@@ -52,11 +53,7 @@
 	});
 
 	$("#tattoo_btn").on("click", function() {
-		$("#tattoo_btn").addClass("active");
-		$("#graph_btn").removeClass("active");
-
-		$("#tattoo_section").show();
-		$("#graphs_section").hide();
+		loadTattoos();
 	});
 
 	function loadGraphs() {
@@ -81,6 +78,18 @@
 		
 		$("#graphs_section").show();
 		$("#tattoo_section").hide();
+	}
+
+	function loadTattoos() {
+		$("#tattoo_btn").addClass("active");
+		$("#graph_btn").removeClass("active");
+
+		$.post("/inkbox/tattoolist", function(data) {
+			$("#tattoo_container").html(data);
+		});
+
+		$("#tattoo_section").show();
+		$("#graphs_section").hide();
 	}
 </script>
 @endsection

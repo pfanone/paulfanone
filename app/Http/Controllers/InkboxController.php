@@ -200,4 +200,28 @@ class InkboxController extends BaseController
 
 		return View::make("inkbox.partials.user_tattoo_graph", $return_array)->render();
 	}
+
+	public function postTattoolist() {
+		$return_array = array();
+		$tattoos = array();
+
+		$select = DB::select('SELECT `id`, `user_id`, `save_count`, `deleted`, `design_name`, `preview_image`, `width`, `height` FROM `designs`', array());
+
+		foreach ($select as $key => $value) {
+			$tattoos[$value->id] = array(
+					`id` => $value->id,
+					`user_id` => $value->user_id,
+					`save_count` => $value->save_count,
+					`deleted` => $value->deleted,
+					`design_name` => $value->design_name,
+					`preview_image` => $value->preview_image,
+					`width` => $value->width,
+					`height` => $value->height
+				);
+		}
+
+		$return_array['tattoos'] = $tattoos;
+
+		return View::make("inkbox.partials.tattoo", $return_array)->render();
+	}
 }
