@@ -15,12 +15,6 @@
 							<dl class="marginT10">
 								<dt>Size:</dt>
 								<dd>{!! $tattoo['width'] !!}&nbsp;<i class="fa fa-times" aria-hidden="true"></i>&nbsp;{!! $tattoo['height'] !!}</dd>
-								<dt>Status:</dt>
-								<dd>@if ($tattoo['deleted'] == 1)
-									Deleted
-									@else
-									Active
-									@endif</dd>
 								<dt>Date Created:</dt>
 								<dd>{!! $tattoo['date_created'] !!}</dd>
 								<dt>Last Updated:</dt>
