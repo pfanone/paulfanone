@@ -43,22 +43,15 @@
 		data: {
 			labels: {!! json_encode($interval_array) !!},
 			datasets: [{
-				label: "User Logins by Date",
 				data: {!! json_encode($count_array) !!},
-					backgroundColor: [
-						'rgba(54, 162, 235, 0.2)',
-						'rgba(54, 162, 235, 0.2)',
-						'rgba(54, 162, 235, 0.2)'
-					],
-					borderColor: [
-						'rgba(54, 162, 235, 1)',
-						'rgba(54, 162, 235, 1)',
-						'rgba(54, 162, 235, 1)'
-					],
 				borderWidth: 1
 			}]
 		},
 		options: {
+			title: {
+				display: true,
+				text: 'User Logins by Date'
+			},
 			scales: {
 				xAxes: [{
 							gridLines: {

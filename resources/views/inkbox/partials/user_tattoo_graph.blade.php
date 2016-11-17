@@ -22,12 +22,15 @@
 		data: {
 			labels: {!! json_encode($label_array) !!},
 			datasets: [{
-				label: "Tattoos Created By Users",
 				data: {!! json_encode($count_array) !!},
 				borderWidth: 1
 			}]
 		},
 		options: {
+			title: {
+				display: true,
+				text: 'Tattoos Created By Users'
+			},
 			scales: {
 				xAxes: [{
 							gridLines: {
