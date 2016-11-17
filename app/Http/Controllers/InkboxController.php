@@ -75,9 +75,9 @@ class InkboxController extends BaseController
 		}
 
 		$return_array['user_data_array'] = $user_data;
-		$return_array['interval_array'] = $interval;
-		$return_array['date_as_of_array'] = $date_as_of;
-		$return_array['count_array'] = $count;
+		$return_array['interval_array'] = $interval_current;
+		$return_array['date_as_of_array'] = $date_as_of_current;
+		$return_array['count_array'] = $count_current;
 		$return_array['count_difference'] = $count_difference;
 
 		return View::make("inkbox.partials.user_graph", $return_array)->render();
