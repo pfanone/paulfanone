@@ -44,6 +44,9 @@ body {
 }
 .graph-div-half { min-height: 141px; }
 
+.tattoo-div-container {
+	background-color: #fff;
+}
 .tattoo-div { min-height: 300px; }
 
 .tattoo-img {
