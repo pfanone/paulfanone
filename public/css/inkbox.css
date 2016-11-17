@@ -49,8 +49,8 @@ body {
 .tattoo-img-container {
 	background-color: #fff;
 	width:100%;
-	min-height: 240px;
-	height: 240px;
+	min-height: 200px;
+	height: 200px;
 }
 
 .tattoo-img {
