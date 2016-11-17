@@ -59,12 +59,6 @@
 			}]
 		},
 		options: {
-			legend: {
-				display: false
-			},
-			tooltips: {
-				enabled: false
-			},
 			scales: {
 				xAxes: [{
 							gridLines: {
