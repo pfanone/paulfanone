@@ -71,7 +71,15 @@ class InkboxController extends BaseController
 		}
 
 		foreach ($count_current as $key => $value) {
-			$count_difference[$interval_current[$key]] = $count_current[$key] - $count_past[$key];
+			$difference = $count_current[$key] - $count_past[$key];
+			$diff_string = " - No Change";
+			if ($difference > 0) {
+				$diff_string = ' <i class="fa fa-caret-up" aria-hidden="true"></i> ' . abs($difference);
+			}
+			else if ($difference < 0) {
+				$diff_string = ' <i class="fa fa-caret-down" aria-hidden="true"></i> ' . abs($difference);
+			}
+			$count_difference[$interval_current[$key]] = $diff_string;
 		}
 
 		$return_array['user_data_array'] = $user_data;
