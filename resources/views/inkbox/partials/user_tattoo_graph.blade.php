@@ -32,6 +32,10 @@
 				xAxes: [{
 							gridLines: {
 								display:false
+							},
+							scaleLabel: {
+								display: true,
+								labelString: '# of Designs Created'
 							}
 						}],
 				yAxes: [{
