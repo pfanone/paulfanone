@@ -26,6 +26,11 @@ body {
 	position: relative;
 }
 
+.graph-btn.active,
+.graph-btn:hover {
+	background-color: #1D2752;
+}
+
 .graph-numbers {
 	position: absolute;
 	bottom: 5px;

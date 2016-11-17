@@ -52,11 +52,17 @@
 	});
 
 	$("#tattoo_btn").on("click", function() {
+		$("#tattoo_btn").addClass("active");
+		$("#graph_btn").removeClass("active");
+
 		$("#tattoo_section").show();
 		$("#graphs_section").hide();
 	});
 
 	function loadGraphs() {
+		$("#graph_btn").addClass("active");
+		$("#tattoo_btn").removeClass("active");
+
 		$("#user_graph_container").empty();
 		$("#tattoo_graph_container").empty();
 		$("#user_tattoo_graph_container").empty();
