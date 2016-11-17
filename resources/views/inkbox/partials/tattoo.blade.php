@@ -7,7 +7,7 @@
 					<h2>{!! $tattoo['design_name'] !!}</h2>
 				</div>
 				<div class="col-xs-12">
-					<img src="{!! $tattoo['preview_image'] !!}">
+					<img class="tattoo-img" src="{!! $tattoo['preview_image'] !!}">
 				</div>
 				<div class="col-xs-12">
 					<div class="row">

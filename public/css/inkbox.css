@@ -46,5 +46,10 @@ body {
 
 .tattoo-div { min-height: 300px; }
 
+.tattoo-img {
+	width: 100%;
+	height: auto;
+}
+
 .fa-caret-up { color: #2ecc71; }
 .fa-caret-down { color: #c0392b; }
