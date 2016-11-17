@@ -19,9 +19,6 @@
 		<div class="col-xs-12 col-sm-4">
 			<div class="row" id="tattoo_graph_container"></div>
 		</div>
-		<div class="col-xs-12 col-sm-4">
-			<div class="row" id="tattoo2_graph_container"></div>
-		</div>
 	</div>
 </div>
 
@@ -34,7 +31,6 @@
 
 	$.post("/inkbox/tattoodata", function(data) {
 		$("#tattoo_graph_container").html(data);
-		$("#tattoo2_graph_container").html(data);
 	});
 </script>
 @endsection
