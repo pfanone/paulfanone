@@ -13,9 +13,11 @@
 	</div>
 
 	<div class="row">
-		<div class="col-xs-12">
-			<button id="graph_btn">Show Graphs</button>
-			<button id="tattoo_btn">Show Tattoos</button>
+		<div class="col-xs-12 col-sm-3">
+			<button id="graph_btn" class="btn-block">Show Graphs</button>
+		</div>
+		<div class="col-xs-12 col-sm-3">
+			<button id="tattoo_btn" class="btn-block">Show Tattoos</button>
 		</div>
 	</div>
 
