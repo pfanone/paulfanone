@@ -22,7 +22,7 @@
 		data: {
 			labels: {!! json_encode($label_array) !!},
 			datasets: [{
-				label: "# of Tattoos Per User",
+				label: "# of Tattoos By User",
 				data: {!! json_encode($count_array) !!},
 				borderWidth: 1
 			}]
