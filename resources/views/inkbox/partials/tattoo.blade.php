@@ -12,12 +12,10 @@
 				<div class="col-xs-12">
 					<div class="row">
 						<div class="col-xs-12 col-sm-4">
-							<p>Size:</p>
-							<p>{!! $tattoo['width'] !!}&nbsp;<i class="fa fa-times" aria-hidden="true"></i>&nbsp;{!! $tattoo['height'] !!}</p>
+							<p>Size:<br>{!! $tattoo['width'] !!}&nbsp;<i class="fa fa-times" aria-hidden="true"></i>&nbsp;{!! $tattoo['height'] !!}</p>
 						</div>
 						<div class="col-xs-12 col-sm-8">
-							<p>Status:</p>
-							<p>@if ($tattoo['deleted'] == 1)
+							<p>Status:<br>@if ($tattoo['deleted'] == 1)
 									Deleted
 									@else
 									Active
