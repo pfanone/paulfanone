@@ -37,8 +37,8 @@
 				yAxes: [{
 							gridLines: {
 								display:false
-							}
-							stacked: true;
+							},
+							stacked: true
 						}]
 			}
 		}
