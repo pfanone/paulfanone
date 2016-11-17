@@ -39,7 +39,7 @@
 <script type="text/javascript">
 	var ctx = document.getElementById("tattoo_data_chart");
 	var myChart = new Chart(ctx, {
-		type: 'bar',
+		type: 'horizontalBar',
 		data: {
 			labels: {!! json_encode($interval_array) !!},
 			datasets: [{
