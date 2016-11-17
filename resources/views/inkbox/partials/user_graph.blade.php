@@ -43,7 +43,7 @@
 		data: {
 			labels: {!! json_encode($interval_array) !!},
 			datasets: [{
-				label: "User Logins",
+				label: "User Logins by Date",
 				data: {!! json_encode($count_array) !!},
 					backgroundColor: [
 						'rgba(54, 162, 235, 0.2)',
@@ -59,12 +59,6 @@
 			}]
 		},
 		options: {
-			legend: {
-				display: false
-			},
-			tooltips: {
-				enabled: false
-			},
 			scales: {
 				xAxes: [{
 							gridLines: {
