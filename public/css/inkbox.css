@@ -59,6 +59,9 @@ body {
 }
 
 .tattoo-header {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
 	min-height: 26px;
 }
 
