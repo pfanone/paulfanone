@@ -39,6 +39,7 @@
 <script type="text/javascript">
 	var ctx = document.getElementById("user_data_chart");
 	var myChart = new Chart(ctx, {
+		label: "User Logins",
 		type: 'bar',
 		data: {
 			labels: {!! json_encode($interval_array) !!},
