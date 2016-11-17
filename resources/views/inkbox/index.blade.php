@@ -14,10 +14,10 @@
 
 	<div class="row">
 		<div class="col-xs-12 col-sm-3">
-			<button id="graph_btn" class="btn-block">Show Graphs</button>
+			<button id="graph_btn" class="btn-block graph-btn">Show Graphs</button>
 		</div>
 		<div class="col-xs-12 col-sm-3">
-			<button id="tattoo_btn" class="btn-block">Show Tattoos</button>
+			<button id="tattoo_btn" class="btn-block graph-btn">Show Tattoos</button>
 		</div>
 	</div>
 
