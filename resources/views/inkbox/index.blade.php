@@ -26,6 +26,12 @@
 		</div>
 	</div>
 
+	<div id="loading_section" class="row">
+		<div class="col-xs-12 progress">
+			<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+		</div>
+	</div>
+
 	<div id="graphs_section" class="row">
 		<div class="col-xs-12">
 			<div class="row" id="user_graph_container"></div>
@@ -61,36 +67,46 @@
 		$("#graph_btn").addClass("active");
 		$("#tattoo_btn").removeClass("active");
 
+		$("#loading_section").show();
+		$("#graphs_section").hide();
+		$("#tattoo_section").hide();
+
 		$("#user_graph_container").empty();
 		$("#tattoo_graph_container").empty();
 		$("#user_tattoo_graph_container").empty();
 
 		$.post("/inkbox/userdata", function(data) {
 			$("#user_graph_container").html(data);
+			$("#loading_section").hide();
+			$("#graphs_section").show();
 		});
 
 		$.post("/inkbox/tattoodata", function(data) {
 			$("#tattoo_graph_container").html(data);
+			$("#loading_section").hide();
+			$("#graphs_section").show();
 		});
 
 		$.post("/inkbox/usertattoodata", function(data) {
 			$("#user_tattoo_graph_container").html(data);
+			$("#loading_section").hide();
+			$("#graphs_section").show();
 		});
-		
-		$("#graphs_section").show();
-		$("#tattoo_section").hide();
 	}
 
 	function loadTattoos() {
 		$("#tattoo_btn").addClass("active");
 		$("#graph_btn").removeClass("active");
 
+		$("#loading_section").show();
+		$("#graphs_section").hide();
+		$("#tattoo_section").hide();
+
 		$.post("/inkbox/tattoolist", function(data) {
 			$("#tattoo_container").html(data);
+			$("#loading_section").hide();
+			$("#tattoo_section").show();
 		});
-
-		$("#tattoo_section").show();
-		$("#graphs_section").hide();
 	}
 </script>
 @endsection
