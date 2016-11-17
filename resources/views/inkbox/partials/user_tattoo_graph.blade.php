@@ -41,6 +41,10 @@
 				yAxes: [{
 							gridLines: {
 								display:false
+							},
+							scaleLabel: {
+								display: true,
+								labelString: 'Users with that many'
 							}
 						}]
 			}
