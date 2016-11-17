@@ -38,6 +38,7 @@
 							gridLines: {
 								display:false
 							}
+							stacked: true;
 						}]
 			}
 		}
