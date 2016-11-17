@@ -23,15 +23,16 @@ body {
 	margin-top: 10px;
 	background-color: #1D272F;
 	color: #fff;
+	position: relative;
 }
 
-.graph-div-full {
-	min-height: 292px;
+.graph-numbers {
+	position: absolute;
+	bottom: 5px;
 }
 
-.graph-div-half {
-	min-height: 141px;
-}
+.graph-div-full {min-height: 292px; }
+.graph-div-half { min-height: 141px; }
 
 .fa-caret-up { color: #2ecc71; }
 .fa-caret-down { color: #c0392b; }
