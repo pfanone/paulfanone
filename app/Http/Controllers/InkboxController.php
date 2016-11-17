@@ -217,8 +217,8 @@ class InkboxController extends BaseController
 						'preview_image' => $value->preview_image,
 						'width' => $value->width,
 						'height' => $value->height,
-						'date_created' => $value->date_created,
-						'date_updated' => $value->date_updated
+						'date_created' => date("Y-m-d", strtotime($value->date_created)),
+						'date_updated' => date("Y-m-d", strtotime($value->date_updated))
 					)
 				);
 		}
