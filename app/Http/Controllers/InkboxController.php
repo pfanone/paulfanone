@@ -141,7 +141,7 @@ class InkboxController extends BaseController
 			}
 			$user_tattoo_data[$key] = $user_tattoo_value;
 
-			if ($key != "All") array_push($user_count, $user_tattoo_value);
+			if ($key != "All") array_push($count_array, $user_tattoo_value);
 		}
 
 		$return_array['user_tattoo_data_array'] = $user_tattoo_data;
