@@ -52,6 +52,9 @@
 				display: true,
 				text: 'User Logins by Date'
 			},
+			legend: {
+				display: false
+			},
 			scales: {
 				xAxes: [{
 							gridLines: {
