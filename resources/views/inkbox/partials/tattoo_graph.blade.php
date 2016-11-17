@@ -52,6 +52,9 @@
 				display: true,
 				text: 'Tattoo Designs by Date'
 			},
+			legend: {
+				display: false
+			},
 			scales: {
 				xAxes: [{
 							gridLines: {

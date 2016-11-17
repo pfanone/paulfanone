@@ -31,6 +31,9 @@
 				display: true,
 				text: 'Tattoos Created By Users'
 			},
+			legend: {
+				display: false
+			},
 			scales: {
 				xAxes: [{
 							gridLines: {
