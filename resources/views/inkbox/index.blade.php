@@ -39,6 +39,22 @@
 
 <script type="text/javascript">
 	$("#graph_btn").on("click", function() {
+		$("#user_graph_container").empty();
+		$("#tattoo_graph_container").empty();
+		$("#user_tattoo_graph_container").empty();
+		
+		$.post("/inkbox/userdata", function(data) {
+			$("#user_graph_container").html(data);
+		});
+
+		$.post("/inkbox/tattoodata", function(data) {
+			$("#tattoo_graph_container").html(data);
+		});
+
+		$.post("/inkbox/usertattoodata", function(data) {
+			$("#user_tattoo_graph_container").html(data);
+		});
+		
 		$("#graphs_section").show();
 		$("#tattoo_section").hide();
 	});
@@ -46,18 +62,6 @@
 	$("#tattoo_btn").on("click", function() {
 		$("#tattoo_section").show();
 		$("#graphs_section").hide();
-	});
-
-	$.post("/inkbox/userdata", function(data) {
-		$("#user_graph_container").html(data);
-	});
-
-	$.post("/inkbox/tattoodata", function(data) {
-		$("#tattoo_graph_container").html(data);
-	});
-
-	$.post("/inkbox/usertattoodata", function(data) {
-		$("#user_tattoo_graph_container").html(data);
 	});
 </script>
 @endsection
