@@ -8,28 +8,28 @@
 
 		<div class="col-xs-12 col-sm-4 col-lg-5">
 			<div class="graph-div graph-div-half">
-				<h4>Tattoos All Time</h4>
+				<h4>Tattoos Created All Time</h4>
 				<h2>{!! $tattoo_data_array['All']['count'] !!}</h2>
 			</div>
 		</div>
 
 		<div class="col-xs-12 col-sm-4 col-lg-5">
 			<div class="graph-div graph-div-half">
-				<h4>Tattoos Today</h4>
+				<h4>Tattoos Created Today</h4>
 				<h2>{!! $tattoo_data_array['Day']['count'] !!}</h2>
 			</div>
 		</div>
 
 		<div class="col-xs-12 col-sm-4 col-lg-5">
 			<div class="graph-div graph-div-half">
-				<h4>Tattoos This Week</h4>
+				<h4>Tattoos Created This Week</h4>
 				<h2>{!! $tattoo_data_array['Week']['count'] !!}</h2>
 			</div>
 		</div>
 
 		<div class="col-xs-12 col-sm-4 col-lg-5">
 			<div class="graph-div graph-div-half">
-				<h4>Tattoos This Month</h4>
+				<h4>Tattoos Created This Month</h4>
 				<h2>{!! $tattoo_data_array['Month']['count'] !!}</h2>
 			</div>
 		</div>
@@ -43,7 +43,7 @@
 		data: {
 			labels: {!! json_encode($interval_array) !!},
 			datasets: [{
-				label: "Tattoo Designs by Date",
+				label: "Tattoo Designs Created by Date",
 				data: {!! json_encode($count_array) !!},
 					backgroundColor: [
 						'rgba(54, 162, 235, 0.2)',
