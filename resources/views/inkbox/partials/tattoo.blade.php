@@ -7,9 +7,7 @@
 					<h3 class="tattoo-header">{!! $tattoo['design_name'] !!}</h3>
 				</div>
 				<div class="col-xs-12">
-					<div class=" tattoo-img-container">
-						<img class="tattoo-img" src="{!! $tattoo['preview_image'] !!}">
-					</div>
+					<div class=" tattoo-img-container" style="background-image:url({!! $tattoo['preview_image'] !!}); background-size: contain;"></div>
 				</div>
 				<div class="col-xs-12">
 					<div class="row">
