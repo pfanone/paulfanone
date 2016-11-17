@@ -28,7 +28,7 @@
 			</div>
 		</div>
 
-		<div class="col-xs-12 col-sm-6">
+		<div class="col-xs-12">
 			<div id="user_graph" class="graph-div graph-div-full">
 				<canvas id="user_data_chart" width="300" height="400"></canvas>
 			</div>
