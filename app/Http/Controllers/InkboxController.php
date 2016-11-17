@@ -146,8 +146,6 @@ class InkboxController extends BaseController
 
 		$return_array['user_tattoo_data_array'] = $user_tattoo_data;
 
-		dd($user_tattoo_data);
-
 		$return_array['interval_array'] = $user_interval;
 		$return_array['date_as_of_array'] = $user_date_as_of;
 		$return_array['count_array'] = $count_array;
