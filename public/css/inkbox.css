@@ -44,10 +44,11 @@ body {
 }
 .graph-div-half { min-height: 141px; }
 
-.tattoo-div-container {
+.tattoo-div { min-height: 300px; }
+
+.tattoo-img-container {
 	background-color: #fff;
 }
-.tattoo-div { min-height: 300px; }
 
 .tattoo-img {
 	width: 100%;
