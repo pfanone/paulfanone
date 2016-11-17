@@ -8,16 +8,21 @@
 <div class="container-fluid">
 	<div class="row main-bg">
 		<div class="col-xs-12 main-header">
-			<h1 class="padL15"><img src="{{ URL::asset('images/logo.png') }}"> Analytics</h1>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-xs-12 col-sm-3">
-			<button id="graph_btn" class="btn-block graph-btn">Show Graphs</button>
-		</div>
-		<div class="col-xs-12 col-sm-3">
-			<button id="tattoo_btn" class="btn-block graph-btn">Show Tattoos</button>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<h1 class="padL15"><img src="{{ URL::asset('images/logo.png') }}"> Analytics</h1>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<div class="row">
+						<div class="col-xs-12 col-sm-3">
+							<button id="graph_btn" class="btn-block graph-btn">Show Graphs</button>
+						</div>
+						<div class="col-xs-12 col-sm-3">
+							<button id="tattoo_btn" class="btn-block graph-btn">Show Tattoos</button>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
