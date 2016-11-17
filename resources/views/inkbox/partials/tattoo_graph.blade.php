@@ -30,7 +30,7 @@
 
 		<div class="col-xs-12">
 			<div id="tattoo_graph" class="graph-div graph-div-full">
-				<canvas id="tattoo_data_chart" width="400" height="400"></canvas>
+				<canvas id="tattoo_data_chart" width="300" height="400"></canvas>
 			</div>
 		</div>
 	</div>
