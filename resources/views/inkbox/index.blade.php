@@ -13,11 +13,14 @@
 	</div>
 
 	<div class="row">
-		<div class="col-xs-12 col-sm-3">
+		<div class="col-xs-12 col-sm-4">
 			<div class="row" id="user_graph_container"></div>
 		</div>
-		<div class="col-xs-12 col-sm-3">
+		<div class="col-xs-12 col-sm-4">
 			<div class="row" id="tattoo_graph_container"></div>
+		</div>
+		<div class="col-xs-12 col-sm-4">
+			<div class="row" id="tattoo2_graph_container"></div>
 		</div>
 	</div>
 </div>
@@ -26,11 +29,12 @@
 
 <script type="text/javascript">
 	$.post("/inkbox/userdata", function(data) {
-		$("#user_graph_container").append(data);
+		$("#user_graph_container").html(data);
 	});
 
 	$.post("/inkbox/tattoodata", function(data) {
-		$("#tattoo_graph_container").append(data);
+		$("#tattoo_graph_container").html(data);
+		$("#tattoo2_graph_container").html(data);
 	});
 </script>
 @endsection
