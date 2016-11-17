@@ -9,10 +9,10 @@
 	<div class="row main-bg">
 		<div class="col-xs-12 main-header">
 			<div class="row">
-				<div class="col-xs-12 col-sm-6 col-md-4">
+				<div class="col-xs-12 col-sm-6">
 					<h1 class="padL15"><img src="{{ URL::asset('images/logo.png') }}"> Analytics</h1>
 				</div>
-				<div class="col-xs-12 col-sm-6 col-md-4 col-md-offset-4 marginB10">
+				<div class="col-xs-12 col-sm-6 col-md-4 col-md-offset-2 marginB10">
 					<div class="row">
 						<div class="col-xs-12 col-sm-6">
 							<button id="graph_btn" class="btn-block graph-btn">Show Graphs</button>
