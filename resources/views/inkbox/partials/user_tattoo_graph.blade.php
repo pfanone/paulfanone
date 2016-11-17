@@ -18,7 +18,7 @@
 <script type="text/javascript">
 	var ctx = document.getElementById("user_tattoo_data_chart");
 	var myChart = new Chart(ctx, {
-		type: 'bar',
+		type: 'horizontalBar',
 		data: {
 			labels: {!! json_encode($label_array) !!},
 			datasets: [{
@@ -30,13 +30,11 @@
 		options: {
 			scales: {
 				xAxes: [{
-							stacked: true,
 							gridLines: {
 								display:false
 							}
 						}],
 				yAxes: [{
-							stacked: true,
 							gridLines: {
 								display:false
 							}
