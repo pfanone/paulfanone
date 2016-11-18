@@ -230,30 +230,27 @@ class InkboxController extends BaseController
 
 	public function postTattootopten() {
 		$return_array = array();
-		$tattoo_array = array();
+		$search_array = array();
+		$query_array = array();
+		$count_array = array();
 
-		$select = DB::select('SELECT * FROM `popular_searches` AS ps INNER JOIN `searches` AS s ON `ps`.`query` LIKE `s`.`query`', array());
-
-		dd($select);
+		$select = DB::select(' SELECT `query`, COUNT(`query`) AS `count` FROM `popular_searches` AS ps INNER JOIN `searches` AS s USING(`query`) GROUP BY `query` ORDER BY `count` DESC LIMIT 10', array());
 
 		foreach ($select as $key => $value) {
-			array_push($tattoo_array, array(
-						'id' => $value->id,
-						'user_id' => $value->user_id,
-						'save_count' => $value->save_count,
-						'deleted' => $value->deleted,
-						'design_name' => $value->design_name,
-						'preview_image' => $value->preview_image,
-						'width' => $value->width,
-						'height' => $value->height,
-						'date_created' => date("Y-m-d", strtotime($value->date_created)),
-						'date_updated' => date("Y-m-d", strtotime($value->date_updated))
+			array_push($search_array, array(
+						'query' => $value->query,
+						'count' => $value->count,
 					)
 				);
+
+			array_push($query_array, $value->query);
+			array_push($count_array, $value->count);
 		}
 
-		$return_array['tattoo_array'] = $tattoo_array;
+		$return_array['search_array'] = $search_array;
+		$return_array['query_array'] = $query_array;
+		$return_array['count_array'] = $count_array;
 
-		return View::make("inkbox.partials.tattoo", $return_array)->render();
+		return View::make("inkbox.partials.search_top_ten", $return_array)->render();
 	}
 }

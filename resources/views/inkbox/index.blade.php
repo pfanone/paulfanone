@@ -36,10 +36,13 @@
 
 	<div id="graphs_section" class="row">
 		<div class="col-xs-12 col-lg-6">
-			<div class="row" id="user_graph_container"></div>
+			<div class="row marginT20" id="user_graph_container"></div>
 		</div>
 		<div class="col-xs-12 col-lg-6">
-			<div class="row marginT20-lg" id="tattoo_graph_container"></div>
+			<div class="row marginT20" id="tattoo_graph_container"></div>
+		</div>
+		<div class="col-xs-12 col-lg-6">
+			<div class="row marginT20" id="search_graph_container"></div>
 		</div>
 		<div class="col-xs-12 col-lg-6">
 			<div class="row marginT20" id="user_tattoo_graph_container"></div>
@@ -75,6 +78,7 @@
 
 		$("#user_graph_container").empty();
 		$("#tattoo_graph_container").empty();
+		$("#search_graph_container").empty();
 		$("#user_tattoo_graph_container").empty();
 
 		$.post("/inkbox/userdata", function(data) {
@@ -85,6 +89,12 @@
 
 		$.post("/inkbox/tattoodata", function(data) {
 			$("#tattoo_graph_container").html(data);
+			$("#loading_section").hide();
+			$("#graphs_section").show();
+		});
+
+		$.post("/inkbox/tattootopten", function(data) {
+			$("#search_graph_container").html(data);
 			$("#loading_section").hide();
 			$("#graphs_section").show();
 		});
@@ -110,9 +120,5 @@
 			$("#tattoo_section").show();
 		});
 	}
-
-	$.post("/inkbox/tattootopten", function(data) {
-		console.log(data);
-	});
 </script>
 @endsection
