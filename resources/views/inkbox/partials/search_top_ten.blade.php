@@ -1,5 +1,8 @@
 <div class="col-xs-12">
 	<div class="row">
+		<div class="col-xs-12">
+			<h3 class="marginT0 marginB0">Tattoo Searches</h3>
+		</div>
 		<div class="col-xs-12 col-sm-8">
 			<div id="search_graph" class="graph-div graph-div-full">
 				<canvas id="search_data_chart" width="400" height="400"></canvas>

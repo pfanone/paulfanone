@@ -1,5 +1,8 @@
 <div class="col-xs-12">
 	<div class="row">
+		<div class="col-xs-12">
+			<h3 class="marginT0 marginB0">User Logins</h3>
+		</div>
 		<div class="col-xs-12 col-sm-4">
 			<div id="user_graph" class="graph-div graph-div-full">
 				<canvas id="user_data_chart" width="400" height="400"></canvas>
