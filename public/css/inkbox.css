@@ -68,6 +68,11 @@ body {
 .fa-caret-up { color: #2ecc71; }
 .fa-caret-down { color: #c0392b; }
 
+.badge { 
+	min-width: 30px;
+	background-color: rgba(54, 162, 235, 0.3);
+}
+
 @media (max-width: 1199px) {
 	.marginT20-lg { margin-top: 20px; }
 }
