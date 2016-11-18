@@ -11,7 +11,7 @@
 				<h4>Top Ten Tattoo Searches</h4>
 				<ol>
 				@foreach($search_array as $key => $value)
-					<li>{!! $value['query'] !!}<span class="badge">{!! $value['count'] !!}</span></li>
+					<li>{!! $value['query'] !!}<span class="badge pull-right">{!! $value['count'] !!}</span></li>
 				@endforeach
 				</ol>
 			</div>
