@@ -39,10 +39,10 @@
 			<div class="row" id="user_graph_container"></div>
 		</div>
 		<div class="col-xs-12 col-lg-6">
-			<div class="row" id="tattoo_graph_container"></div>
+			<div class="row marginT20-lg" id="tattoo_graph_container"></div>
 		</div>
 		<div class="col-xs-12 col-lg-6">
-			<div class="row marginT20" id="user_tattoo_graph_container"></div>
+			<div class="row marginT20-lg" id="user_tattoo_graph_container"></div>
 		</div>
 	</div>
 
