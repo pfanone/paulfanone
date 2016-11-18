@@ -36,17 +36,17 @@ class InkboxController extends BaseController
 
 		$select = DB::select('SELECT 0 AS `type`, "All" AS `interval`, "" `date_as_of`, count(*) AS `count` FROM `users`'
 			. ' UNION'
-			. ' SELECT 1 AS `type`, "Month" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 MONTH) AS `date_as_of`, count(*) AS `count` FROM `users` WHERE `last_login` BETWEEN DATE_SUB(NOW(), INTERVAL 1 MONTH) AND NOW()'
+			. ' SELECT 1 AS `type`, "Month" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 MONTH) AS `date_as_of`, count(*) AS `count` FROM `users` WHERE `last_login` BETWEEN DATE_SUB(CONVERT_TZ(NOW()), INTERVAL 1 MONTH) AND CONVERT_TZ(NOW())'
 			. ' UNION'
-			. ' SELECT 1 AS `type`, "Week" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 WEEK) AS `date_as_of`, count(*) AS `count` FROM `users` WHERE `last_login` BETWEEN DATE_SUB(NOW(), INTERVAL 1 WEEK) AND NOW()'
+			. ' SELECT 1 AS `type`, "Week" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 WEEK) AS `date_as_of`, count(*) AS `count` FROM `users` WHERE `last_login` BETWEEN DATE_SUB(CONVERT_TZ(NOW()), INTERVAL 1 WEEK) AND CONVERT_TZ(NOW())'
 			. ' UNION'
-			. ' SELECT 1 AS `type`, "Day" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 DAY) AS `date_as_of`, count(*) AS `count` FROM `users` WHERE `last_login` BETWEEN DATE_SUB(NOW(), INTERVAL 1 DAY) AND NOW()'
+			. ' SELECT 1 AS `type`, "Day" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 DAY) AS `date_as_of`, count(*) AS `count` FROM `users` WHERE `last_login` BETWEEN DATE_SUB(CONVERT_TZ(NOW()), INTERVAL 1 DAY) AND CONVERT_TZ(NOW())'
 			. ' UNION'
-			. ' SELECT 2 AS `type`, "Month" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 MONTH) AS `date_as_of`, count(*) AS `count` FROM `users` WHERE `last_login` BETWEEN DATE_SUB(NOW(), INTERVAL 2 MONTH) AND DATE_SUB(NOW(), INTERVAL 1 MONTH)'
+			. ' SELECT 2 AS `type`, "Month" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 MONTH) AS `date_as_of`, count(*) AS `count` FROM `users` WHERE `last_login` BETWEEN DATE_SUB(CONVERT_TZ(NOW()), INTERVAL 2 MONTH) AND DATE_SUB(CONVERT_TZ(NOW()), INTERVAL 1 MONTH)'
 			. ' UNION'
-			. ' SELECT 2 AS `type`, "Week" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 WEEK) AS `date_as_of`, count(*) AS `count` FROM `users` WHERE `last_login` BETWEEN DATE_SUB(NOW(), INTERVAL 2 WEEK) AND DATE_SUB(NOW(), INTERVAL 1 WEEK)'
+			. ' SELECT 2 AS `type`, "Week" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 WEEK) AS `date_as_of`, count(*) AS `count` FROM `users` WHERE `last_login` BETWEEN DATE_SUB(CONVERT_TZ(NOW()), INTERVAL 2 WEEK) AND DATE_SUB(CONVERT_TZ(NOW()), INTERVAL 1 WEEK)'
 			. ' UNION'
-			. ' SELECT 2 AS `type`, "Day" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 DAY) AS `date_as_of`, count(*) AS `count` FROM `users` WHERE `last_login` BETWEEN DATE_SUB(NOW(), INTERVAL 2 DAY) AND DATE_SUB(NOW(), INTERVAL 1 DAY)', array());
+			. ' SELECT 2 AS `type`, "Day" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 DAY) AS `date_as_of`, count(*) AS `count` FROM `users` WHERE `last_login` BETWEEN DATE_SUB(CONVERT_TZ(NOW()), INTERVAL 2 DAY) AND DATE_SUB(CONVERT_TZ(NOW()), INTERVAL 1 DAY)', array());
 
 		foreach ($select as $key => $value) {
 			if ($value->type != 2) {
@@ -108,17 +108,17 @@ class InkboxController extends BaseController
 
 		$select = DB::select('SELECT 0 AS `type`, "All" AS `interval`, "" `date_as_of`, count(*) AS `count` FROM `designs`'
 			. ' UNION'
-			. ' SELECT 1 AS `type`, "Month" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 MONTH) AS `date_as_of`, count(*) AS `count` FROM `designs` WHERE `date_created` BETWEEN DATE_SUB(NOW(), INTERVAL 1 MONTH) AND NOW()'
+			. ' SELECT 1 AS `type`, "Month" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 MONTH) AS `date_as_of`, count(*) AS `count` FROM `designs` WHERE `date_created` BETWEEN DATE_SUB(CONVERT_TZ(NOW()), INTERVAL 1 MONTH) AND CONVERT_TZ(NOW())'
 			. ' UNION'
-			. ' SELECT 1 AS `type`, "Week" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 WEEK) AS `date_as_of`, count(*) AS `count` FROM `designs` WHERE `date_created` BETWEEN DATE_SUB(NOW(), INTERVAL 1 WEEK) AND NOW()'
+			. ' SELECT 1 AS `type`, "Week" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 WEEK) AS `date_as_of`, count(*) AS `count` FROM `designs` WHERE `date_created` BETWEEN DATE_SUB(CONVERT_TZ(NOW()), INTERVAL 1 WEEK) AND CONVERT_TZ(NOW())'
 			. ' UNION'
-			. ' SELECT 1 AS `type`, "Day" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 DAY) AS `date_as_of`, count(*) AS `count` FROM `designs` WHERE `date_created` BETWEEN DATE_SUB(NOW(), INTERVAL 1 DAY) AND NOW()'
+			. ' SELECT 1 AS `type`, "Day" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 DAY) AS `date_as_of`, count(*) AS `count` FROM `designs` WHERE `date_created` BETWEEN DATE_SUB(CONVERT_TZ(NOW()), INTERVAL 1 DAY) AND CONVERT_TZ(NOW())'
 			. ' UNION'
-			. ' SELECT 2 AS `type`, "Month" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 MONTH) AS `date_as_of`, count(*) AS `count` FROM `designs` WHERE `date_created` BETWEEN DATE_SUB(NOW(), INTERVAL 2 MONTH) AND DATE_SUB(NOW(), INTERVAL 1 MONTH)'
+			. ' SELECT 2 AS `type`, "Month" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 MONTH) AS `date_as_of`, count(*) AS `count` FROM `designs` WHERE `date_created` BETWEEN DATE_SUB(CONVERT_TZ(NOW()), INTERVAL 2 MONTH) AND DATE_SUB(CONVERT_TZ(NOW()), INTERVAL 1 MONTH)'
 			. ' UNION'
-			. ' SELECT 2 AS `type`, "Week" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 WEEK) AS `date_as_of`, count(*) AS `count` FROM `designs` WHERE `date_created` BETWEEN DATE_SUB(NOW(), INTERVAL 2 WEEK) AND DATE_SUB(NOW(), INTERVAL 1 WEEK)'
+			. ' SELECT 2 AS `type`, "Week" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 WEEK) AS `date_as_of`, count(*) AS `count` FROM `designs` WHERE `date_created` BETWEEN DATE_SUB(CONVERT_TZ(NOW()), INTERVAL 2 WEEK) AND DATE_SUB(CONVERT_TZ(NOW()), INTERVAL 1 WEEK)'
 			. ' UNION'
-			. ' SELECT 2 AS `type`, "Day" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 DAY) AS `date_as_of`, count(*) AS `count` FROM `designs` WHERE `date_created` BETWEEN DATE_SUB(NOW(), INTERVAL 2 DAY) AND DATE_SUB(NOW(), INTERVAL 1 DAY)', array());
+			. ' SELECT 2 AS `type`, "Day" AS `interval`, DATE_SUB(CURRENT_DATE, INTERVAL 1 DAY) AS `date_as_of`, count(*) AS `count` FROM `designs` WHERE `date_created` BETWEEN DATE_SUB(CONVERT_TZ(NOW()), INTERVAL 2 DAY) AND DATE_SUB(CONVERT_TZ(NOW()), INTERVAL 1 DAY)', array());
 
 		foreach ($select as $key => $value) {
 			if ($value->type != 2) {
