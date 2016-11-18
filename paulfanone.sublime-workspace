@@ -4,6 +4,58 @@
 		"selected_items":
 		[
 			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"ba",
+				"background-repeat"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"ret",
+				"return_array"
+			],
+			[
+				"des",
+				"design_count"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"user",
+				"user_data"
+			],
+			[
+				"scr",
+				"source\t<source>"
+			],
+			[
+				"scrip",
+				"script\tTag"
+			],
+			[
+				"re",
+				"return_array"
+			],
+			[
+				"data",
+				"data_array"
+			],
+			[
 				"origin",
 				"originID"
 			],
@@ -15,6 +67,80 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "resources/views/inkbox/index.blade.php",
+			"settings":
+			{
+				"buffer_size": 3143,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "@section(\"content\")"
+			}
+		},
+		{
+			"file": "resources/views/inkbox/partials/tattoo.blade.php",
+			"settings":
+			{
+				"buffer_size": 1050,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/js/chart.js",
+			"settings":
+			{
+				"buffer_size": 339554,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/InkboxController.php",
+			"settings":
+			{
+				"buffer_size": 9475,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/css/inkbox.css",
+			"settings":
+			{
+				"buffer_size": 1103,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "#user_graph {"
+			}
+		},
+		{
+			"file": "resources/views/inkbox/partials/user_graph.blade.php",
+			"settings":
+			{
+				"buffer_size": 1913,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "resources/views/inkbox/partials/tattoo_graph.blade.php",
+			"settings":
+			{
+				"buffer_size": 1970,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "resources/views/inkbox/partials/user_tattoo_graph.blade.php",
+			"settings":
+			{
+				"buffer_size": 1320,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -60,10 +186,41 @@
 	},
 	"expanded_folders":
 	[
-		"/D/Sites/paulfanone"
+		"/D/Sites/paulfanone",
+		"/D/Sites/paulfanone/app",
+		"/D/Sites/paulfanone/app/Http",
+		"/D/Sites/paulfanone/app/Http/Middleware",
+		"/D/Sites/paulfanone/app/Jobs",
+		"/D/Sites/paulfanone/app/Listeners",
+		"/D/Sites/paulfanone/app/Providers",
+		"/D/Sites/paulfanone/public",
+		"/D/Sites/paulfanone/public/css",
+		"/D/Sites/paulfanone/public/fonts",
+		"/D/Sites/paulfanone/public/js",
+		"/D/Sites/paulfanone/resources",
+		"/D/Sites/paulfanone/resources/views",
+		"/D/Sites/paulfanone/resources/views/home",
+		"/D/Sites/paulfanone/resources/views/inkbox",
+		"/D/Sites/paulfanone/resources/views/layout",
+		"/D/Sites/paulfanone/storage",
+		"/D/Sites/paulfanone/storage/framework",
+		"/D/Sites/paulfanone/storage/framework/views"
 	],
 	"file_history":
 	[
+		"/D/Sites/paulfanone/resources/views/layout/main.blade.php",
+		"/D/Sites/paulfanone/app/User.php",
+		"/D/Sites/paulfanone/resources/views/home/index.blade.php",
+		"/C/laragon/www/WhoPlusYou-Html5/resources/views/topmatches/index.blade.php",
+		"/D/Sites/paulfanone/public/js/chart.js",
+		"/D/Sites/paulfanone/app/Http/routes.php",
+		"/C/laragon/www/WhoPlusYou-Html5/app/Http/Middleware/VerifyCsrfToken.php",
+		"/D/Sites/paulfanone/app/Http/Middleware/VerifyCsrfToken.php",
+		"/D/Sites/paulfanone/.env.example",
+		"/C/laragon/www/WhoPlusYou-Html5/app/Http/Controllers/ResumeController.php",
+		"/C/laragon/www/WhoPlusYou-Html5/public/js/cv/myCVEdit.js",
+		"/D/Sites/paulfanone/config/database.php",
+		"/D/Sites/paulfanone/app/Http/Controllers/HomeController.php",
 		"/C/laragon/www/WhoPlusYou-Html5/app/Models/user/origin.php",
 		"/C/laragon/www/WhoPlusYou-Html5/app/Models/Landingpage.php",
 		"/D/Sites/inkbox_analytics/resources/views/home/index.blade.php",
@@ -72,16 +229,13 @@
 		"/C/laragon/www/WhoPlusYou-Html5/app/Models/affiliationdashboard.php",
 		"/D/Sites/paulfanone/public/css/helper-classes.css",
 		"/D/Sites/paulfanone/public/css/main.css",
-		"/D/Sites/paulfanone/resources/views/home/index.blade.php",
 		"/D/Sites/paulfanone/resources/views/canvas/index.blade.php",
 		"/D/Sites/paulfanone/app/Http/Controllers/CanvasController.php",
-		"/D/Sites/paulfanone/resources/views/layout/main.blade.php",
 		"/D/Sites/paulfanone/public/js/fabric.js",
 		"/D/Sites/paulfanone/public/js/fabric.require.js",
 		"/D/Sites/paulfanone/public/js/fabric.min.js",
 		"/C/Users/pfano/AppData/Local/Temp/Rar$DIa0.706/README.md",
 		"/D/Sites/paulfanone/public/js/canvas.js",
-		"/D/Sites/paulfanone/app/Http/routes.php",
 		"/C/Users/pfano/AppData/Local/Temp/Rar$DIa0.491/README.md",
 		"/C/Users/pfano/Downloads/parallax-scroll-effect-1302/parallax/js/main.js",
 		"/C/Users/pfano/Downloads/parallax-scroll-effect-1302/parallax/js/skrollr.js",
@@ -94,7 +248,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -111,6 +265,51 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"borderColor:",
+			"rgba(",
+			"defaultcolo",
+			"default",
+			"borderColor =",
+			"borderColor",
+			"border",
+			"border = ",
+			"border",
+			"col-sm-6",
+			"tattoo_array",
+			"`",
+			" class=\"graph-numbers\"",
+			"col-xs-12 col-sm-4 col-md-3 col-lg-2",
+			"col-xs-12 col-sm-4 col-lg-5",
+			"label",
+			"user_",
+			"user_data_array",
+			"FROM `users` WHERE `last_login`",
+			"Average",
+			"borderColor",
+			"borderColor = ",
+			"borderColor",
+			"defaultColor",
+			"user_",
+			"col-xs-12 col-sm-4",
+			"col-xs-12 col-sm-4 col-md-3 col-lg-4",
+			"col-xs-12 col-sm-4",
+			"col-xs-12 col-sm-4 col-md-3 col-lg-4",
+			"}}",
+			"{{",
+			"data['count_array']",
+			"data['interval_array']",
+			"class=\"col-xs-12 col-sm-3 col-md-2\"",
+			"class=\"col-xs-12 col-sm-4 col-md-3 col-lg-2\"",
+			"user_graph_container",
+			"user_",
+			"    ",
+			"scaleFontColor",
+			"axis",
+			"rgb",
+			"#",
+			"p>",
+			"    ",
+			"homestead",
 			"__DIR__ = ",
 			"__DIR__",
 			"localdev",
@@ -129,6 +328,25 @@
 		"regex": false,
 		"replace_history":
 		[
+			"col-md-6",
+			"'",
+			"col-xs-12 col-sm-4 col-md-3",
+			"col-xs-12 col-sm-4",
+			"tattoo_",
+			"tattoo_data_array",
+			"FROM `designs` WHERE `date_created`",
+			"user_tattoo_",
+			"col-xs-12",
+			"!!}",
+			"{!!",
+			"{{ $count_array }}",
+			"{{ $interval_array }}",
+			"$interval_array",
+			"class=\"' + graph_size + '\"",
+			"graph_container",
+			"tattoo_",
+			"\t",
+			"h2>",
 			"\t",
 			"\"img",
 			"\t",
@@ -144,14 +362,253 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "resources/views/inkbox/index.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3143,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								403,
+								403
+							]
+						],
+						"settings":
+						{
+							"auto_name": "@section(\"content\")",
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "resources/views/inkbox/partials/tattoo.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1050,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1031,
+								1031
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "public/js/chart.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 339554,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								275422,
+								275422
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 148665.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/Http/Controllers/InkboxController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9475,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4027,
+								4027
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1746.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"file": "public/css/inkbox.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1103,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1067,
+								1067
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#user_graph {",
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 225.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "resources/views/inkbox/partials/user_graph.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1913,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								77,
+								45
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "resources/views/inkbox/partials/tattoo_graph.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1970,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1622,
+								1595
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 90.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "resources/views/inkbox/partials/user_tattoo_graph.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1320,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								75,
+								75
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 26.0
 	},
 	"input":
 	{
@@ -166,11 +623,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -188,7 +652,7 @@
 	"project": "paulfanone.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 62.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -230,7 +694,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 132.0,
+	"side_bar_width": 185.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

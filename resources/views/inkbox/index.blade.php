@@ -110,5 +110,9 @@
 			$("#tattoo_section").show();
 		});
 	}
+
+	$.post("/inkbox/tattootopten", function(data) {
+		console.log(data);
+	});
 </script>
 @endsection
