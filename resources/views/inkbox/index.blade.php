@@ -57,8 +57,11 @@
 <script type="text/javascript" src="{{ URL::asset('js/chart.js') }}"></script>
 
 <script type="text/javascript">
+	@if ($page == 'tattoos')
+	loadTattoos();
+	@else
 	loadGraphs();
-	// loadTattoos();
+	@endif
 
 	$("#graph_btn").on("click", function() {
 		loadGraphs();
@@ -69,6 +72,8 @@
 	});
 
 	function loadGraphs() {
+		history.pushState(null, null, '/inkbox/graphs');
+
 		$("#graph_btn").addClass("active");
 		$("#tattoo_btn").removeClass("active");
 
@@ -107,6 +112,8 @@
 	}
 
 	function loadTattoos() {
+		history.pushState(null, null, '/inkbox/tattoos');
+
 		$("#tattoo_btn").addClass("active");
 		$("#graph_btn").removeClass("active");
 

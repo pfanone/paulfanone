@@ -17,6 +17,24 @@ class InkboxController extends BaseController
 	public function anyIndex() {
 		$return_array = array();
 
+		$return_array['page'] = 'graphs';
+
+		return View::make('inkbox.index', $return_array);
+	}
+
+	public function anyGraphs() {
+		$return_array = array();
+
+		$return_array['page'] = 'graphs';
+
+		return View::make('inkbox.index', $return_array);
+	}
+
+	public function anyTattoos() {
+		$return_array = array();
+
+		$return_array['page'] = 'tattoos';
+
 		return View::make('inkbox.index', $return_array);
 	}
 
