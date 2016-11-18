@@ -4,7 +4,11 @@
 		<div class="tattoo-div">
 			<div class="row">
 				<div class="col-xs-12">
+					@if ($tattoo['design_name'] != "") 
 					<h3 class="tattoo-header" title="{!! $tattoo['design_name'] !!}">{!! $tattoo['design_name'] !!}</h3>
+					@else
+					<h3 class="tattoo-header" title="ID: {!! $tattoo['id'] !!}">ID: {!! $tattoo['id'] !!}</h3>
+					@endif
 				</div>
 				<div class="col-xs-12">
 					<div class="tattoo-img-container" style="background-image:url({!! $tattoo['preview_image'] !!});background-size: contain;background-repeat: no-repeat;background-position: center;"></div>
