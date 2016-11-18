@@ -35,13 +35,13 @@
 	</div>
 
 	<div id="graphs_section" class="row">
-		<div class="col-xs-12">
+		<div class="col-xs-12 col-lg-6">
 			<div class="row" id="user_graph_container"></div>
 		</div>
-		<div class="col-xs-12">
-			<div class="row marginT20" id="tattoo_graph_container"></div>
+		<div class="col-xs-12 col-lg-6">
+			<div class="row" id="tattoo_graph_container"></div>
 		</div>
-		<div class="col-xs-12">
+		<div class="col-xs-12 col-lg-6">
 			<div class="row marginT20" id="user_tattoo_graph_container"></div>
 		</div>
 	</div>
