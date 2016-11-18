@@ -9,11 +9,11 @@
 		<div class="col-xs-12 col-sm-4">
 			<div class="graph-div graph-div-full">
 				<h4>Top Ten Tattoo Searches</h4>
-				<ul>
+				<ol>
 				@foreach($search_array as $key => $value)
-					<ol>{!! $value['query'] !!} - {!! $value['count'] !!}</ol>
+					<li>{!! $value['query'] !!}<span class="badge">{!! $value['count'] !!}</span></li>
 				@endforeach
-				</ul>
+				</ol>
 			</div>
 		</div>
 	</div>
